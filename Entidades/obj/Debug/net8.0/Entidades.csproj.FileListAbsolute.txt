@@ -1,0 +1,12 @@
+E:\UAI\5to Cuatrimestre\LUG\Programas\BuenasPracticas+MDS2\Entidades\bin\Debug\net8.0\Entidades.deps.json
+E:\UAI\5to Cuatrimestre\LUG\Programas\BuenasPracticas+MDS2\Entidades\bin\Debug\net8.0\Entidades.dll
+E:\UAI\5to Cuatrimestre\LUG\Programas\BuenasPracticas+MDS2\Entidades\bin\Debug\net8.0\Entidades.pdb
+E:\UAI\5to Cuatrimestre\LUG\Programas\BuenasPracticas+MDS2\Entidades\obj\Debug\net8.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+E:\UAI\5to Cuatrimestre\LUG\Programas\BuenasPracticas+MDS2\Entidades\obj\Debug\net8.0\Entidades.AssemblyInfoInputs.cache
+E:\UAI\5to Cuatrimestre\LUG\Programas\BuenasPracticas+MDS2\Entidades\obj\Debug\net8.0\Entidades.AssemblyInfo.cs
+E:\UAI\5to Cuatrimestre\LUG\Programas\BuenasPracticas+MDS2\Entidades\obj\Debug\net8.0\Entidades.csproj.CoreCompileInputs.cache
+E:\UAI\5to Cuatrimestre\LUG\Programas\BuenasPracticas+MDS2\Entidades\obj\Debug\net8.0\Entidades.dll
+E:\UAI\5to Cuatrimestre\LUG\Programas\BuenasPracticas+MDS2\Entidades\obj\Debug\net8.0\refint\Entidades.dll
+E:\UAI\5to Cuatrimestre\LUG\Programas\BuenasPracticas+MDS2\Entidades\obj\Debug\net8.0\Entidades.pdb
+E:\UAI\5to Cuatrimestre\LUG\Programas\BuenasPracticas+MDS2\Entidades\obj\Debug\net8.0\ref\Entidades.dll
+E:\UAI\5to Cuatrimestre\LUG\Programas\BuenasPracticas+MDS2\Entidades\obj\Debug\net8.0\Entidades.sourcelink.json

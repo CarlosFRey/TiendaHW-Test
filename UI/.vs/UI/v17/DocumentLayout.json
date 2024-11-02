@@ -1,0 +1,252 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\UI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{58414FEA-6A71-4879-823B-A7E645C055FB}|..\\Business\\Business.csproj|e:\\uai\\5to cuatrimestre\\lug\\programas\\buenaspracticas\u002Bmds2\\business\\carritoproductobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|e:\\uai\\5to cuatrimestre\\lug\\programas\\buenaspracticas\u002Bmds2\\ui\\completarcarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|solutionrelative:completarcarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\UI\\completarcarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|solutionrelative:completarcarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED0184D-D644-43AB-AB67-D808BE12FEDA}|..\\Data\\Data.csproj|e:\\uai\\5to cuatrimestre\\lug\\programas\\buenaspracticas\u002Bmds2\\data\\productosdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58414FEA-6A71-4879-823B-A7E645C055FB}|..\\Business\\Business.csproj|e:\\uai\\5to cuatrimestre\\lug\\programas\\buenaspracticas\u002Bmds2\\business\\productosbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D513D82-D1D9-4978-BAAF-3458AC91A246}|..\\Entidades\\Entidades.csproj|e:\\uai\\5to cuatrimestre\\lug\\programas\\buenaspracticas\u002Bmds2\\entidades\\detallecarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58414FEA-6A71-4879-823B-A7E645C055FB}|..\\Business\\Business.csproj|e:\\uai\\5to cuatrimestre\\lug\\programas\\buenaspracticas\u002Bmds2\\business\\clientesbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58414FEA-6A71-4879-823B-A7E645C055FB}|..\\Business\\Business.csproj|e:\\uai\\5to cuatrimestre\\lug\\programas\\buenaspracticas\u002Bmds2\\business\\carritobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\UI\\ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|solutionrelative:ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D513D82-D1D9-4978-BAAF-3458AC91A246}|..\\Entidades\\Entidades.csproj|e:\\uai\\5to cuatrimestre\\lug\\programas\\buenaspracticas\u002Bmds2\\entidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\UI\\compras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|solutionrelative:compras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|e:\\uai\\5to cuatrimestre\\lug\\programas\\buenaspracticas\u002Bmds2\\ui\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|solutionrelative:ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ED0184D-D644-43AB-AB67-D808BE12FEDA}|..\\Data\\Data.csproj|e:\\uai\\5to cuatrimestre\\lug\\programas\\buenaspracticas\u002Bmds2\\data\\carritodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|e:\\uai\\5to cuatrimestre\\lug\\programas\\buenaspracticas\u002Bmds2\\ui\\compras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|solutionrelative:compras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CompletarCarrito.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\UI\\CompletarCarrito.cs",
+              "RelativeDocumentMoniker": "CompletarCarrito.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\UI\\CompletarCarrito.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CompletarCarrito.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T11:08:51.339Z",
+              "IsPinned": true,
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CompletarCarrito.cs",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\UI\\CompletarCarrito.cs",
+              "RelativeDocumentMoniker": "CompletarCarrito.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\UI\\CompletarCarrito.cs",
+              "RelativeToolTip": "CompletarCarrito.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAkwLAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T17:19:59.611Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DetalleCarrito.cs",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Entidades\\DetalleCarrito.cs",
+              "RelativeDocumentMoniker": "..\\Entidades\\DetalleCarrito.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Entidades\\DetalleCarrito.cs",
+              "RelativeToolTip": "..\\Entidades\\DetalleCarrito.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T23:03:43.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClientesBLL.cs",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Business\\ClientesBLL.cs",
+              "RelativeDocumentMoniker": "..\\Business\\ClientesBLL.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Business\\ClientesBLL.cs",
+              "RelativeToolTip": "..\\Business\\ClientesBLL.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACsAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T21:15:23.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Entidades\\Cliente.cs",
+              "RelativeDocumentMoniker": "..\\Entidades\\Cliente.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Entidades\\Cliente.cs",
+              "RelativeToolTip": "..\\Entidades\\Cliente.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwCkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T19:34:43.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UI.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\UI\\UI.cs",
+              "RelativeDocumentMoniker": "UI.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\UI\\UI.cs [Dise\u00F1o]",
+              "RelativeToolTip": "UI.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T18:50:54.531Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Compras.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\UI\\Compras.cs",
+              "RelativeDocumentMoniker": "Compras.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\UI\\Compras.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Compras.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T18:42:56.126Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CarritoBLL.cs",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Business\\CarritoBLL.cs",
+              "RelativeDocumentMoniker": "..\\Business\\CarritoBLL.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Business\\CarritoBLL.cs",
+              "RelativeToolTip": "..\\Business\\CarritoBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T00:46:43.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CarritoProductoBLL.cs",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Business\\CarritoProductoBLL.cs",
+              "RelativeDocumentMoniker": "..\\Business\\CarritoProductoBLL.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Business\\CarritoProductoBLL.cs",
+              "RelativeToolTip": "..\\Business\\CarritoProductoBLL.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAA9wEIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T00:45:26.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductosBLL.cs",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Business\\ProductosBLL.cs",
+              "RelativeDocumentMoniker": "..\\Business\\ProductosBLL.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Business\\ProductosBLL.cs",
+              "RelativeToolTip": "..\\Business\\ProductosBLL.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAA5wDQAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T12:19:59.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductosDAO.cs",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Data\\ProductosDAO.cs",
+              "RelativeDocumentMoniker": "..\\Data\\ProductosDAO.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Data\\ProductosDAO.cs",
+              "RelativeToolTip": "..\\Data\\ProductosDAO.cs",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAWwDABAACJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T01:05:08.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CarritoDAO.cs",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Data\\CarritoDAO.cs",
+              "RelativeDocumentMoniker": "..\\Data\\CarritoDAO.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Data\\CarritoDAO.cs",
+              "RelativeToolTip": "..\\Data\\CarritoDAO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T00:45:57.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Compras.cs",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\UI\\Compras.cs",
+              "RelativeDocumentMoniker": "Compras.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\UI\\Compras.cs",
+              "RelativeToolTip": "Compras.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T18:42:58.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Ventas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\UI\\Ventas.cs",
+              "RelativeDocumentMoniker": "Ventas.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\UI\\Ventas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Ventas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T00:44:22.8Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
