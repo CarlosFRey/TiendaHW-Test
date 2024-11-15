@@ -37,7 +37,7 @@ namespace UI
             // 
             // btnRegistrarCliente
             // 
-            btnRegistrarCliente.Location = new Point(267, 22);
+            btnRegistrarCliente.Location = new Point(267, 13);
             btnRegistrarCliente.Name = "btnRegistrarCliente";
             btnRegistrarCliente.Size = new Size(81, 41);
             btnRegistrarCliente.TabIndex = 0;
@@ -47,7 +47,7 @@ namespace UI
             // 
             // btnGestorCarritos
             // 
-            btnGestorCarritos.Location = new Point(180, 22);
+            btnGestorCarritos.Location = new Point(180, 14);
             btnGestorCarritos.Name = "btnGestorCarritos";
             btnGestorCarritos.Size = new Size(81, 41);
             btnGestorCarritos.TabIndex = 1;
@@ -59,7 +59,7 @@ namespace UI
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Times New Roman", 27.75F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
-            label1.Location = new Point(12, 25);
+            label1.Location = new Point(12, 13);
             label1.Name = "label1";
             label1.Size = new Size(298, 42);
             label1.TabIndex = 2;
@@ -67,7 +67,7 @@ namespace UI
             // 
             // btnCobrarVenta
             // 
-            btnCobrarVenta.Location = new Point(93, 22);
+            btnCobrarVenta.Location = new Point(93, 14);
             btnCobrarVenta.Name = "btnCobrarVenta";
             btnCobrarVenta.Size = new Size(81, 41);
             btnCobrarVenta.TabIndex = 3;
@@ -76,7 +76,7 @@ namespace UI
             // 
             // btnGenerarRemito
             // 
-            btnGenerarRemito.Location = new Point(6, 22);
+            btnGenerarRemito.Location = new Point(6, 14);
             btnGenerarRemito.Name = "btnGenerarRemito";
             btnGenerarRemito.Size = new Size(81, 41);
             btnGenerarRemito.TabIndex = 4;
@@ -90,18 +90,18 @@ namespace UI
             groupBox1.Controls.Add(btnCobrarVenta);
             groupBox1.Controls.Add(btnRegistrarCliente);
             groupBox1.Controls.Add(btnGestorCarritos);
-            groupBox1.Location = new Point(814, 12);
+            groupBox1.Location = new Point(806, 0);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(361, 75);
+            groupBox1.Size = new Size(361, 55);
             groupBox1.TabIndex = 5;
             groupBox1.TabStop = false;
             groupBox1.Text = "Menu de Casos de Uso";
             // 
             // PanelVentas
             // 
-            PanelVentas.Location = new Point(-1, 109);
+            PanelVentas.Location = new Point(-1, 85);
             PanelVentas.Name = "PanelVentas";
-            PanelVentas.Size = new Size(1176, 531);
+            PanelVentas.Size = new Size(1176, 555);
             PanelVentas.TabIndex = 6;
             // 
             // fileSystemWatcher1
@@ -112,7 +112,7 @@ namespace UI
             // panel1
             // 
             panel1.BackColor = Color.Black;
-            panel1.Location = new Point(-1, 93);
+            panel1.Location = new Point(-1, 69);
             panel1.Name = "panel1";
             panel1.Size = new Size(1176, 10);
             panel1.TabIndex = 7;

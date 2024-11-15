@@ -38,5 +38,9 @@ namespace Entidades
             this.direccion = direccion;
             //this.carritos = new List<Carrito>(); // Inicializar la lista si es necesario
         }
+        public string NombreCompleto
+        {
+            get { return $"{Apellido}, {Nombre}"; }
+        }
     }
 }

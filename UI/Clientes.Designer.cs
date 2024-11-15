@@ -64,7 +64,7 @@
             dgvClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvClientes.Location = new Point(173, 77);
             dgvClientes.Name = "dgvClientes";
-            dgvClientes.Size = new Size(617, 361);
+            dgvClientes.Size = new Size(850, 361);
             dgvClientes.TabIndex = 1;
             dgvClientes.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -198,7 +198,7 @@
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(713, 12);
+            btnSalir.Location = new Point(948, 12);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(75, 59);
             btnSalir.TabIndex = 3;
@@ -210,7 +210,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1035, 450);
             Controls.Add(btnSalir);
             Controls.Add(groupBox1);
             Controls.Add(dgvClientes);

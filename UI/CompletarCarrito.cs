@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace UI
 {
@@ -53,7 +54,7 @@ namespace UI
             cbClientes.DataSource = null;
             lstClientes = clientesBLL.GetClientes();
             cbClientes.DataSource = lstClientes;
-            cbClientes.DisplayMember = "NOMBRE";
+            cbClientes.DisplayMember = "NombreCompleto";
             cbClientes.ValueMember = "CLIENTEID";
 
         }

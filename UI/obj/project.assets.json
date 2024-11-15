@@ -698,11 +698,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas+MDS2\\UI\\UI.csproj",
+      "projectUniqueName": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\UI.csproj",
       "projectName": "UI",
-      "projectPath": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas+MDS2\\UI\\UI.csproj",
+      "projectPath": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\UI.csproj",
       "packagesPath": "C:\\Users\\reyca\\.nuget\\packages\\",
-      "outputPath": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas+MDS2\\UI\\obj\\",
+      "outputPath": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -723,11 +723,11 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas+MDS2\\Business\\Business.csproj": {
-              "projectPath": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas+MDS2\\Business\\Business.csproj"
+            "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Business\\Business.csproj": {
+              "projectPath": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Business\\Business.csproj"
             },
-            "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas+MDS2\\Entidades\\Entidades.csproj": {
-              "projectPath": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas+MDS2\\Entidades\\Entidades.csproj"
+            "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Entidades\\Entidades.csproj": {
+              "projectPath": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Entidades\\Entidades.csproj"
             }
           }
         }

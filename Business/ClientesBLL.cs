@@ -28,13 +28,21 @@ namespace Business
         }
         private bool ValidoEmail(string email)
         {
-            string patronEmail = @"^[^@\s]+@[^@\s]+\.[^@\s]+$"; // Copiado de internet, funciona... investigar
-            return Regex.IsMatch(email, patronEmail);
+            try
+            {
+                string patronEmail = @"^[^@\s]+@[^@\s]+\.[^@\s]+$"; // Copiado de internet, funciona... investigar
+                return Regex.IsMatch(email, patronEmail);
+            }
+            catch (Exception ex) { throw; }
         }
 
-        public List<Cliente> GetClientes() 
+        public List<Cliente> GetClientes()
         {
-           return clienteDao.getClientes();
+            try
+            {
+                return clienteDao.getClientes();
+            }
+            catch (Exception ex) { throw; }
         }
 
         public List<Carrito> getCarritosCliente(int clienteId)
