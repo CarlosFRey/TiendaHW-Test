@@ -165,6 +165,11 @@ namespace UI
             txtMontoTotal.Text = string.Format("{0:C2}", (monto));
             //txtFinalPesos.Text = (monto*Convert.ToDouble(txtValorDolar.Text)).ToString();
             txtFinalPesos.Text = string.Format("{0:C2}", (monto * Convert.ToDouble(txtValorDolar.Text)));
+            
+            dgv_Carrito.DataSource = null;
+            lstCarritoProducto = CarritoProductoBLL.getDetalleCarritoProducto(((Carrito)cbCarritosCliente.SelectedItem).CarritoID);
+            dgv_Carrito.DataSource = lstCarritoProducto;
+            lblEstadoCarrito.Text = carritoBLL.getEstadoCarrito(((Carrito)cbCarritosCliente.SelectedItem).CarritoID).ToString();
         }
 
         private void btnAgregarProductos_Click(object sender, EventArgs e)

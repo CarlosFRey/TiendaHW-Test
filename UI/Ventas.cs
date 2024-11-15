@@ -58,10 +58,10 @@ namespace UI
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Times New Roman", 27.75F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Times New Roman", 21.75F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
             label1.Location = new Point(12, 13);
             label1.Name = "label1";
-            label1.Size = new Size(298, 42);
+            label1.Size = new Size(231, 32);
             label1.TabIndex = 2;
             label1.Text = "Gestión de Ventas";
             // 
@@ -99,9 +99,9 @@ namespace UI
             // 
             // PanelVentas
             // 
-            PanelVentas.Location = new Point(-1, 85);
+            PanelVentas.Location = new Point(-1, 76);
             PanelVentas.Name = "PanelVentas";
-            PanelVentas.Size = new Size(1176, 555);
+            PanelVentas.Size = new Size(1176, 564);
             PanelVentas.TabIndex = 6;
             // 
             // fileSystemWatcher1
@@ -112,7 +112,7 @@ namespace UI
             // panel1
             // 
             panel1.BackColor = Color.Black;
-            panel1.Location = new Point(-1, 69);
+            panel1.Location = new Point(-1, 60);
             panel1.Name = "panel1";
             panel1.Size = new Size(1176, 10);
             panel1.TabIndex = 7;

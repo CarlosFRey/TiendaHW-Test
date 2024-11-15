@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|e:\\uai\\5to cuatrimestre\\lug\\programas\\tiendahw-test1\\tiendahw-test\\ui\\completarcarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|solutionrelative:completarcarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\completarcarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|solutionrelative:completarcarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|e:\\uai\\5to cuatrimestre\\lug\\programas\\tiendahw-test1\\tiendahw-test\\ui\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|solutionrelative:ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|solutionrelative:ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|solutionrelative:ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\compras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|solutionrelative:compras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{58414FEA-6A71-4879-823B-A7E645C055FB}|..\\Business\\Business.csproj|e:\\uai\\5to cuatrimestre\\lug\\programas\\tiendahw-test1\\tiendahw-test\\business\\productosbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,14 +39,6 @@
       "AbsoluteMoniker": "D:0:0:{58414FEA-6A71-4879-823B-A7E645C055FB}|..\\Business\\Business.csproj|e:\\uai\\5to cuatrimestre\\lug\\programas\\tiendahw-test1\\tiendahw-test\\business\\carritobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|e:\\uai\\5to cuatrimestre\\lug\\programas\\tiendahw-test1\\tiendahw-test\\ui\\completarcarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|solutionrelative:completarcarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\completarcarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|solutionrelative:completarcarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8D513D82-D1D9-4978-BAAF-3458AC91A246}|..\\Entidades\\Entidades.csproj|e:\\uai\\5to cuatrimestre\\lug\\programas\\tiendahw-test1\\tiendahw-test\\entidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -32,18 +48,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|solutionrelative:clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|solutionrelative:ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\compras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|solutionrelative:compras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|solutionrelative:ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Business\\CarritoProductoBLL.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -78,36 +82,51 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CompletarCarrito.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "CompletarCarrito.cs [Dise\u00F1o]",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\CompletarCarrito.cs",
               "RelativeDocumentMoniker": "CompletarCarrito.cs",
-              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\CompletarCarrito.cs [Design]",
-              "RelativeToolTip": "CompletarCarrito.cs [Design]",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\CompletarCarrito.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CompletarCarrito.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T11:08:51.339Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "CompletarCarrito.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\CompletarCarrito.cs",
               "RelativeDocumentMoniker": "CompletarCarrito.cs",
               "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\CompletarCarrito.cs",
               "RelativeToolTip": "CompletarCarrito.cs",
-              "ViewState": "AgIAAKQAAAAAAAAAAAAQwDgAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAkwKsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T17:19:59.611Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "UI.cs",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\UI.cs",
+              "RelativeDocumentMoniker": "UI.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\UI.cs",
+              "RelativeToolTip": "UI.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAkwBQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T02:58:28.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ProductosBLL.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Business\\ProductosBLL.cs",
               "RelativeDocumentMoniker": "..\\Business\\ProductosBLL.cs",
@@ -120,41 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CarritoProductoBLL.cs",
-              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Business\\CarritoProductoBLL.cs",
-              "RelativeDocumentMoniker": "..\\Business\\CarritoProductoBLL.cs",
-              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Business\\CarritoProductoBLL.cs",
-              "RelativeToolTip": "..\\Business\\CarritoProductoBLL.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAwwFAAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T02:50:01.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CarritoBLL.cs",
-              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Business\\CarritoBLL.cs",
-              "RelativeDocumentMoniker": "..\\Business\\CarritoBLL.cs",
-              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Business\\CarritoBLL.cs",
-              "RelativeToolTip": "..\\Business\\CarritoBLL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T02:49:05.83Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "ClientesBLL.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Business\\ClientesBLL.cs",
               "RelativeDocumentMoniker": "..\\Business\\ClientesBLL.cs",
@@ -162,12 +147,11 @@
               "RelativeToolTip": "..\\Business\\ClientesBLL.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAA5wEQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T02:45:22.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-15T02:45:22.402Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Clientes.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\Clientes.cs",
               "RelativeDocumentMoniker": "Clientes.cs",
@@ -180,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Clientes.cs [Dise\u00F1o]",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\Clientes.cs",
               "RelativeDocumentMoniker": "Clientes.cs",
@@ -191,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Cliente.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Entidades\\Cliente.cs",
               "RelativeDocumentMoniker": "..\\Entidades\\Cliente.cs",
@@ -203,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "CarritoBLL.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Business\\CarritoBLL.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\BuenasPracticas\u002BMDS2\\Business\\CarritoBLL.cs",
@@ -215,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "CarritoProductoBLL.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Business\\CarritoProductoBLL.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\BuenasPracticas\u002BMDS2\\Business\\CarritoProductoBLL.cs",
@@ -226,7 +210,75 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 3,
+              "Title": "UI.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\UI.cs",
+              "RelativeDocumentMoniker": "UI.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\UI.cs [Dise\u00F1o]",
+              "RelativeToolTip": "UI.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T18:50:54.531Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Ventas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\Ventas.cs",
+              "RelativeDocumentMoniker": "Ventas.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\Ventas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Ventas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T00:44:22.8Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Compras.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\Compras.cs",
+              "RelativeDocumentMoniker": "Compras.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\Compras.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Compras.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T18:42:56.126Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CarritoBLL.cs",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Business\\CarritoBLL.cs",
+              "RelativeDocumentMoniker": "..\\Business\\CarritoBLL.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Business\\CarritoBLL.cs",
+              "RelativeToolTip": "..\\Business\\CarritoBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T02:49:05.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CarritoProductoBLL.cs",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Business\\CarritoProductoBLL.cs",
+              "RelativeDocumentMoniker": "..\\Business\\CarritoProductoBLL.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Business\\CarritoProductoBLL.cs",
+              "RelativeToolTip": "..\\Business\\CarritoProductoBLL.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwFAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T02:50:01.727Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "ProductosBLL.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Business\\ProductosBLL.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\BuenasPracticas\u002BMDS2\\Business\\ProductosBLL.cs",
@@ -238,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "ProductosDAO.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Data\\ProductosDAO.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\BuenasPracticas\u002BMDS2\\Data\\ProductosDAO.cs",
@@ -250,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "CarritoDAO.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Data\\CarritoDAO.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\BuenasPracticas\u002BMDS2\\Data\\CarritoDAO.cs",
@@ -262,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Compras.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\Compras.cs",
               "RelativeDocumentMoniker": "Compras.cs",
@@ -275,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Cliente.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Entidades\\Cliente.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\BuenasPracticas\u002BMDS2\\Entidades\\Cliente.cs",
@@ -287,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ClientesBLL.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Business\\ClientesBLL.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\BuenasPracticas\u002BMDS2\\Business\\ClientesBLL.cs",
@@ -296,39 +348,6 @@
               "ViewState": "AgIAAAkAAAAAAAAAAAAAACsAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-31T21:15:23.585Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UI.cs [Dise\u00F1o]",
-              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\UI.cs",
-              "RelativeDocumentMoniker": "UI.cs",
-              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\UI.cs [Dise\u00F1o]",
-              "RelativeToolTip": "UI.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T18:50:54.531Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Compras.cs [Dise\u00F1o]",
-              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\Compras.cs",
-              "RelativeDocumentMoniker": "Compras.cs",
-              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\Compras.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Compras.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T18:42:56.126Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Ventas.cs [Dise\u00F1o]",
-              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\Ventas.cs",
-              "RelativeDocumentMoniker": "Ventas.cs",
-              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\Ventas.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Ventas.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T00:44:22.8Z"
             }
           ]
         }

@@ -18,7 +18,7 @@ namespace UI
             formulario.TopLevel = false;
             formulario.FormBorderStyle = FormBorderStyle.None;
             formulario.Dock = DockStyle.Fill;
-            formulario.BackColor = Color.White;
+            //formulario.BackColor = Color.White;
 
             Contenedor.Controls.Add(formulario);
             formulario.Show();
