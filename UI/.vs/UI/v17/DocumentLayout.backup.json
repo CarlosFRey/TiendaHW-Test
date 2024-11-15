@@ -3,7 +3,16 @@
   "WorkspaceRootPath": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{58414FEA-6A71-4879-823B-A7E645C055FB}|..\\Business\\Business.csproj|e:\\uai\\5to cuatrimestre\\lug\\programas\\tiendahw-test1\\tiendahw-test\\business\\productosbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{58414FEA-6A71-4879-823B-A7E645C055FB}|..\\Business\\Business.csproj|e:\\uai\\5to cuatrimestre\\lug\\programas\\tiendahw-test1\\tiendahw-test\\business\\clientesbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58414FEA-6A71-4879-823B-A7E645C055FB}|..\\Business\\Business.csproj|e:\\uai\\5to cuatrimestre\\lug\\programas\\tiendahw-test1\\tiendahw-test\\business\\carritoproductobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58414FEA-6A71-4879-823B-A7E645C055FB}|..\\Business\\Business.csproj|e:\\uai\\5to cuatrimestre\\lug\\programas\\tiendahw-test1\\tiendahw-test\\business\\carritobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9CE2214-CDBD-4993-B3B6-BB863E8D6B88}|UI.csproj|e:\\uai\\5to cuatrimestre\\lug\\programas\\tiendahw-test1\\tiendahw-test\\ui\\completarcarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -73,7 +82,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "CompletarCarrito.cs [Design]",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\CompletarCarrito.cs",
               "RelativeDocumentMoniker": "CompletarCarrito.cs",
@@ -81,12 +90,11 @@
               "RelativeToolTip": "CompletarCarrito.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T11:08:51.339Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "CompletarCarrito.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\CompletarCarrito.cs",
               "RelativeDocumentMoniker": "CompletarCarrito.cs",
@@ -95,20 +103,45 @@
               "ViewState": "AgIAAKQAAAAAAAAAAAAQwDgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T17:19:59.611Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ClientesBLL.cs",
-              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Business\\ClientesBLL.cs",
-              "RelativeDocumentMoniker": "..\\Business\\ClientesBLL.cs",
-              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Business\\ClientesBLL.cs",
-              "RelativeToolTip": "..\\Business\\ClientesBLL.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwC0AAAAJAAAAAAAAAA==",
+              "Title": "ProductosBLL.cs",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Business\\ProductosBLL.cs",
+              "RelativeDocumentMoniker": "..\\Business\\ProductosBLL.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Business\\ProductosBLL.cs",
+              "RelativeToolTip": "..\\Business\\ProductosBLL.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAmwI8AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T02:45:22.402Z",
+              "WhenOpened": "2024-11-15T02:52:17.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CarritoProductoBLL.cs",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Business\\CarritoProductoBLL.cs",
+              "RelativeDocumentMoniker": "..\\Business\\CarritoProductoBLL.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Business\\CarritoProductoBLL.cs",
+              "RelativeToolTip": "..\\Business\\CarritoProductoBLL.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwFAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T02:50:01.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CarritoBLL.cs",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Business\\CarritoBLL.cs",
+              "RelativeDocumentMoniker": "..\\Business\\CarritoBLL.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Business\\CarritoBLL.cs",
+              "RelativeToolTip": "..\\Business\\CarritoBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T02:49:05.83Z",
               "EditorCaption": ""
             },
             {
@@ -121,7 +154,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "ClientesBLL.cs",
+              "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Business\\ClientesBLL.cs",
+              "RelativeDocumentMoniker": "..\\Business\\ClientesBLL.cs",
+              "ToolTip": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Business\\ClientesBLL.cs",
+              "RelativeToolTip": "..\\Business\\ClientesBLL.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAA5wEQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T02:45:22.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Clientes.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\Clientes.cs",
               "RelativeDocumentMoniker": "Clientes.cs",
@@ -134,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Clientes.cs [Dise\u00F1o]",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\Clientes.cs",
               "RelativeDocumentMoniker": "Clientes.cs",
@@ -145,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Cliente.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\Entidades\\Cliente.cs",
               "RelativeDocumentMoniker": "..\\Entidades\\Cliente.cs",
@@ -157,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "CarritoBLL.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Business\\CarritoBLL.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\BuenasPracticas\u002BMDS2\\Business\\CarritoBLL.cs",
@@ -169,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "CarritoProductoBLL.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Business\\CarritoProductoBLL.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\BuenasPracticas\u002BMDS2\\Business\\CarritoProductoBLL.cs",
@@ -180,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "ProductosBLL.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Business\\ProductosBLL.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\BuenasPracticas\u002BMDS2\\Business\\ProductosBLL.cs",
@@ -192,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "ProductosDAO.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Data\\ProductosDAO.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\BuenasPracticas\u002BMDS2\\Data\\ProductosDAO.cs",
@@ -204,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "CarritoDAO.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Data\\CarritoDAO.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\BuenasPracticas\u002BMDS2\\Data\\CarritoDAO.cs",
@@ -216,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Compras.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\Compras.cs",
               "RelativeDocumentMoniker": "Compras.cs",
@@ -229,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Cliente.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Entidades\\Cliente.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\BuenasPracticas\u002BMDS2\\Entidades\\Cliente.cs",
@@ -241,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "ClientesBLL.cs",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\BuenasPracticas\u002BMDS2\\Business\\ClientesBLL.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\BuenasPracticas\u002BMDS2\\Business\\ClientesBLL.cs",
@@ -253,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "UI.cs [Dise\u00F1o]",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\UI.cs",
               "RelativeDocumentMoniker": "UI.cs",
@@ -264,7 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Compras.cs [Dise\u00F1o]",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\Compras.cs",
               "RelativeDocumentMoniker": "Compras.cs",
@@ -275,7 +321,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Ventas.cs [Dise\u00F1o]",
               "DocumentMoniker": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\Ventas.cs",
               "RelativeDocumentMoniker": "Ventas.cs",

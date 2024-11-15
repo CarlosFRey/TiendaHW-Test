@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 using Data;
 using Entidades;
 
@@ -22,7 +23,14 @@ namespace Business
                 {
                     throw new Exception("Todos los campos deben tener valores, el precio debe ser mayor a 0 y el stock no puede ser negativo");
                 }
-                else { productoDAO.GuardarProducto(producto); }
+                else 
+                {
+                    using (var trx = new TransactionScope())
+                    {
+                        productoDAO.GuardarProducto(producto); 
+                        trx.Complete();
+                    }
+                }
             }
             catch (Exception ex) { throw; }
             
@@ -32,7 +40,11 @@ namespace Business
         {
             try
             {
-                return productoDAO.getProductos();
+                using (var trx = new TransactionScope())
+                {
+                    return productoDAO.getProductos();
+                    trx.Complete();
+                }
             }
             catch (Exception ex) { throw; }
         }
@@ -40,7 +52,11 @@ namespace Business
         {
             try
             {
-                return productoDAO.getProductos(stock);
+                using (var trx = new TransactionScope())
+                {
+                    return productoDAO.getProductos(stock);
+                    trx.Complete();
+                }
             }
             catch (Exception ex) { throw; }
         }
@@ -48,13 +64,17 @@ namespace Business
         {
             try
             {
-                if (categoria == "Todos")
+                using (var trx = new TransactionScope())
                 {
-                    return productoDAO.getProductos(stock);
-                }
-                else
-                {
-                return productoDAO.getProductos(stock, categoria);
+                    if (categoria == "Todos")
+                    {
+                        return productoDAO.getProductos(stock);
+                    }
+                    else
+                    {
+                    return productoDAO.getProductos(stock, categoria);
+                    }
+                    trx.Complete();
                 }
             }
             catch (Exception ex) { throw; }
@@ -69,7 +89,14 @@ namespace Business
                 {
                     throw new Exception("Validación de datos a modificar incorrecta, verifique los datos a modificar");
                 }
-                else { return productoDAO.modificarProducto(modificarProducto); }
+                else 
+                {
+                    using (var trx = new TransactionScope())
+                    {
+                        return productoDAO.modificarProducto(modificarProducto); 
+                        trx.Complete();
+                    }
+                }
 
             }
             catch (Exception ex) { throw; }
@@ -78,11 +105,15 @@ namespace Business
         {
             try
             {
-                string resultado = "No se encontraron productos";
-                if (productoDAO.existeProducto(eliminarProducto) == false) { throw new Exception(resultado.ToString()); }
-                productoDAO.eliminarProducto(eliminarProducto);
-                if (productoDAO.existeProducto(eliminarProducto) == false) { resultado = "Producto eliminado"; }
-                return resultado;
+                using (var trx = new TransactionScope())
+                {
+                    string resultado = "No se encontraron productos";
+                    if (productoDAO.existeProducto(eliminarProducto) == false) { throw new Exception(resultado.ToString()); }
+                    productoDAO.eliminarProducto(eliminarProducto);
+                    if (productoDAO.existeProducto(eliminarProducto) == false) { resultado = "Producto eliminado"; }
+                    return resultado;
+                    trx.Complete(); 
+                }
             }
             catch (Exception ex) { throw; }
         }
@@ -91,7 +122,11 @@ namespace Business
         {
             try
             {
-                return productoDAO.getCategorias();
+                using (var trx = new TransactionScope())
+                {
+                    return productoDAO.getCategorias();
+                    trx.Complete();
+                }
             }
             catch (Exception ex) { throw; }
         }
@@ -103,7 +138,11 @@ namespace Business
                 if ( string.IsNullOrEmpty(productoDAO.buscarProductoPorId(idBuscado).ProductoID.ToString())) { throw new Exception("Producto no encontrado"); }
                 else
                 {
-                    return productoDAO.buscarProductoPorId(idBuscado);
+                    using (var trx = new TransactionScope())
+                    {
+                        return productoDAO.buscarProductoPorId(idBuscado);
+                        trx.Complete();
+                    }
                 }
             }
             catch (Exception ex) { throw; }

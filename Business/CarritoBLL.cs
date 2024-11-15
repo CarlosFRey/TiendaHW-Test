@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 using Data;
 using Entidades;
 
@@ -17,7 +18,11 @@ namespace Business
         {
             try
             {
-                return carritoDAO.AgregarCarrito(clienteCarrito);
+                using (var trx = new TransactionScope())
+                {
+                    return carritoDAO.AgregarCarrito(clienteCarrito);
+                    trx.Complete();
+                }
             }
             catch (Exception ex) { throw; }
 
@@ -26,7 +31,11 @@ namespace Business
         {
             try
             {
-                return carritoDAO.getEstadoCarrito(idCarrito);
+                using (var trx = new TransactionScope())
+                {
+                    return carritoDAO.getEstadoCarrito(idCarrito);
+                    trx.Complete();
+                }
             }
             catch (Exception ex) { throw; }
         }

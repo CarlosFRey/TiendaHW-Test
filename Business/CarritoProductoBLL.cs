@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 using Data;
 using Entidades;
 
@@ -18,9 +19,13 @@ namespace Business
         {
             try
             {
-                if (carritoDAO.getEstadoCarrito(idCarrito) != 1) { throw new Exception("El carrito no se encuentra Activo"); }
-                bajarStockProducto(idProducto, Cantidad);
-                carritoProductoDAO.AgregarProductosCarrito(idCarrito, idProducto, Cantidad, Precio);
+                using (var trx = new TransactionScope())
+                {
+                    if (carritoDAO.getEstadoCarrito(idCarrito) != 1) { throw new Exception("El carrito no se encuentra Activo"); }
+                    bajarStockProducto(idProducto, Cantidad);
+                    carritoProductoDAO.AgregarProductosCarrito(idCarrito, idProducto, Cantidad, Precio);
+                    trx.Complete();
+                }
 
             }
             catch (Exception ex) { throw; }
@@ -29,8 +34,12 @@ namespace Business
         {
             try
             {
-                int stock = productosDAO.getStockProducto(idProducto);
-                if (Cantidad > stock) { throw new Exception("No hay suficientes productos en stock"); }
+                using (var trx = new TransactionScope())
+                {
+                    int stock = productosDAO.getStockProducto(idProducto);
+                    if (Cantidad > stock) { throw new Exception("No hay suficientes productos en stock"); }
+                    trx.Complete();
+                }
                 
             }
             catch (Exception ex) { throw; }
@@ -40,7 +49,12 @@ namespace Business
         {
             try
             {
-                return carritoProductoDAO.getCarritoProductos(idCarrito);
+                using (var trx = new TransactionScope())
+                {
+                    return carritoProductoDAO.getCarritoProductos(idCarrito);
+                    trx.Complete();
+                }
+                
             }
             catch (Exception ex) { throw; }
         }
@@ -49,19 +63,23 @@ namespace Business
         {
             try
             {
-                List<DetalleCarrito> detalleCarrito = new List<DetalleCarrito>();
-                List<CarritoProducto> lstCP = carritoProductoDAO.getCarritoProductos(idCarrito);
-                foreach (var CarritoProducto in lstCP)
+                using (var trx = new TransactionScope())
                 {
-                    DetalleCarrito nuevaLinea = new DetalleCarrito();
-                    Producto detalleProducto = productosDAO.buscarProductoPorId(CarritoProducto.ProductoID);
-                    nuevaLinea.Modelo = detalleProducto.Modelo;
-                    nuevaLinea.Marca = productosDAO.buscarProductoPorId(CarritoProducto.ProductoID).Marca;
-                    nuevaLinea.Cantidad = CarritoProducto.Cantidad;
-                    nuevaLinea.PrecioUnitario = CarritoProducto.PrecioUnitario;
-                    detalleCarrito.Add(nuevaLinea);
+                    List<DetalleCarrito> detalleCarrito = new List<DetalleCarrito>();
+                    List<CarritoProducto> lstCP = carritoProductoDAO.getCarritoProductos(idCarrito);
+                    foreach (var CarritoProducto in lstCP)
+                    {
+                        DetalleCarrito nuevaLinea = new DetalleCarrito();
+                        Producto detalleProducto = productosDAO.buscarProductoPorId(CarritoProducto.ProductoID);
+                        nuevaLinea.Modelo = detalleProducto.Modelo;
+                        nuevaLinea.Marca = productosDAO.buscarProductoPorId(CarritoProducto.ProductoID).Marca;
+                        nuevaLinea.Cantidad = CarritoProducto.Cantidad;
+                        nuevaLinea.PrecioUnitario = CarritoProducto.PrecioUnitario;
+                        detalleCarrito.Add(nuevaLinea);
+                    }
+                    return detalleCarrito;
+                    trx.Complete();
                 }
-                return detalleCarrito;
             }
             catch (Exception ex) { throw; }
         }
