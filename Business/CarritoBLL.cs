@@ -20,12 +20,12 @@ namespace Business
             {
                 using (var trx = new TransactionScope())
                 {
-                    return carritoDAO.AgregarCarrito(clienteCarrito);
+                    string resultado = carritoDAO.AgregarCarrito(clienteCarrito);
                     trx.Complete();
+                    return resultado;
                 }
             }
             catch (Exception ex) { throw; }
-
         }
         public int getEstadoCarrito(int idCarrito)
         {
@@ -33,8 +33,9 @@ namespace Business
             {
                 using (var trx = new TransactionScope())
                 {
-                    return carritoDAO.getEstadoCarrito(idCarrito);
+                    int resultado = carritoDAO.getEstadoCarrito(idCarrito);
                     trx.Complete();
+                    return resultado;
                 }
             }
             catch (Exception ex) { throw; }

@@ -9,14 +9,12 @@ namespace Entidades
     public class Carrito
     {
         private int carritoID;
-        private int clienteID;
-        //private Cliente cliente;
+        private List<CarritoProducto> carritoProductos;
         private double montoTotal;
         private int estado;
                 
         public int CarritoID { get => carritoID; set => carritoID = value; }
-        public int ClienteID { get => clienteID; set => clienteID = value; }
-        //public Cliente Cliente { get => cliente; set => cliente = value; }
+        public List<CarritoProducto> CarritoProductos { get => carritoProductos; set => carritoProductos = value; }
         public double MontoTotal { get => montoTotal; set => montoTotal = value; }
         public int Estado { get => estado; set => estado = value; }
     }

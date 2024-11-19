@@ -51,7 +51,13 @@ namespace Business
             {
                 using (var trx = new TransactionScope())
                 {
-                    return clienteDao.getClientes();
+                    List<Cliente> lstClientes = new List<Cliente> ();
+                    lstClientes = clienteDao.getClientes();
+                    foreach (var cliente in lstClientes)
+                    {
+                        cliente.lstCarritos = clienteDao.getCarritosCliente(cliente.ClienteID);
+                    }
+                    return lstClientes;
                     trx.Complete();
                 }
             }

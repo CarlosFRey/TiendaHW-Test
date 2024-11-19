@@ -55,7 +55,6 @@ E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\bin\Debug\
 E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\bin\Debug\net8.0-windows\Data.pdb
 E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\obj\Debug\net8.0-windows\UI.csproj.AssemblyReference.cache
 E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\obj\Debug\net8.0-windows\UI.Clientes.resources
-E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\obj\Debug\net8.0-windows\UI.CompletarCarrito.resources
 E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\obj\Debug\net8.0-windows\UI.Compras.resources
 E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\obj\Debug\net8.0-windows\UI.Properties.Resources.resources
 E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\obj\Debug\net8.0-windows\UI.UI.resources
@@ -72,3 +71,4 @@ E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\obj\Debug\
 E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\obj\Debug\net8.0-windows\UI.pdb
 E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\obj\Debug\net8.0-windows\UI.genruntimeconfig.cache
 E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\obj\Debug\net8.0-windows\ref\UI.dll
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\obj\Debug\net8.0-windows\UI.CompletarCarrito.resources

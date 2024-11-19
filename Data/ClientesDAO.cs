@@ -47,11 +47,12 @@ namespace Data
                     using (conn)
                     {
                         conn.Open();
-                        using (SqlCommand cmd = new SqlCommand("SELECT * FROM CLIENTE", conn))
+                        using (SqlCommand cmd = new SqlCommand("SELECT CLIENTEID, NOMBRE, APELLIDO, CUIT, EMAIL,TELEFONO,DIRECCION FROM CLIENTE", conn))
                         {
                             using (SqlDataReader reader = cmd.ExecuteReader()) {
                                 while (reader.Read())
                                 {
+
                                     Cliente cliente = new Cliente()
                                     {
                                         ClienteID = reader.GetInt32(0),
@@ -130,8 +131,9 @@ namespace Data
                     using (conn)
                     {
                         conn.Open();
-                        using (SqlCommand cmd = new SqlCommand("SELECT * FROM CARRITO", conn))
+                        using (SqlCommand cmd = new SqlCommand("SELECT CARRITOID, CLIENTE_ID, MONTO_TOTAL, ESTADO FROM CARRITO WHERE CLIENTE_ID = @idcliente", conn))
                         {
+                            cmd.Parameters.AddWithValue("idcliente", clienteId);
                             using (SqlDataReader reader = cmd.ExecuteReader())
                             {
                                 while (reader.Read())
@@ -140,7 +142,6 @@ namespace Data
                                     {
                                         Carrito carrito = new Carrito();
                                         carrito.CarritoID = reader.GetInt32(0);
-                                        carrito.ClienteID = reader.GetInt32(1);
                                         carrito.MontoTotal = reader.GetDouble(2);
                                         carrito.Estado = reader.GetInt32(3);
                                         lstCarritos.Add(carrito);

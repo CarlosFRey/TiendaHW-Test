@@ -51,8 +51,9 @@ namespace Business
             {
                 using (var trx = new TransactionScope())
                 {
-                    return carritoProductoDAO.getCarritoProductos(idCarrito);
+                    List<CarritoProducto> newlst = carritoProductoDAO.getCarritoProductos(idCarrito);
                     trx.Complete();
+                    return newlst;
                 }
                 
             }
@@ -70,15 +71,15 @@ namespace Business
                     foreach (var CarritoProducto in lstCP)
                     {
                         DetalleCarrito nuevaLinea = new DetalleCarrito();
-                        Producto detalleProducto = productosDAO.buscarProductoPorId(CarritoProducto.ProductoID);
+                        Producto detalleProducto = productosDAO.buscarProductoPorId(CarritoProducto.Producto.ProductoID);
                         nuevaLinea.Modelo = detalleProducto.Modelo;
-                        nuevaLinea.Marca = productosDAO.buscarProductoPorId(CarritoProducto.ProductoID).Marca;
+                        nuevaLinea.Marca = productosDAO.buscarProductoPorId(CarritoProducto.Producto.ProductoID).Marca;
                         nuevaLinea.Cantidad = CarritoProducto.Cantidad;
                         nuevaLinea.PrecioUnitario = CarritoProducto.PrecioUnitario;
                         detalleCarrito.Add(nuevaLinea);
                     }
-                    return detalleCarrito;
                     trx.Complete();
+                    return detalleCarrito;
                 }
             }
             catch (Exception ex) { throw; }

@@ -15,7 +15,7 @@ namespace Entidades
         private string email;
         private double telefono;
         private string direccion;
-        //private List<Carrito> carritos;
+        private List<Carrito> lstcarritos;
 
         public int ClienteID { get => clienteID; set => clienteID = value; }
         public string Nombre { get => nombre; set => nombre = value; }
@@ -24,7 +24,8 @@ namespace Entidades
         public string Email { get => email; set => email = value; }
         public double Telefono { get => telefono; set => telefono = value; }
         public string Direccion { get => direccion; set => direccion = value; }
-        //public List<Carrito> Carritos { get => carritos; set => carritos = value; }
+        public List<Carrito> lstCarritos { get => lstcarritos; set => lstcarritos = value; }
+
 
         public Cliente() { }
         public Cliente(int clienteID, string nombre, string apellido, double cuit, string email, double telefono, string direccion)
@@ -36,7 +37,7 @@ namespace Entidades
             this.email = email;
             this.telefono = telefono;
             this.direccion = direccion;
-            //this.carritos = new List<Carrito>(); // Inicializar la lista si es necesario
+            this.lstcarritos = new List<Carrito>();
         }
         public string NombreCompleto
         {

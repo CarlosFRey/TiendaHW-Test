@@ -46,13 +46,13 @@ namespace UI
         }
         public void UpdateGral()
         {
-            completarListadoClientes();
-            llenarCB();
+            completarListadoClientes(); //ok!
+            llenarCB(); //ok!
         }
-        private void completarListadoClientes()
+        private void completarListadoClientes() //ok!
         {
             cbClientes.DataSource = null;
-            lstClientes = clientesBLL.GetClientes();
+            lstClientes = clientesBLL.GetClientes(); //ok!
             cbClientes.DataSource = lstClientes;
             cbClientes.DisplayMember = "NombreCompleto";
             cbClientes.ValueMember = "CLIENTEID";
@@ -65,14 +65,14 @@ namespace UI
             {
                 if (cbClientes.SelectedValue != null)
                 {
-                    lstClientes = clientesBLL.GetClientes();
+                    lstClientes = clientesBLL.GetClientes(); //ok!
                     foreach (var cliente in lstClientes)
                     {
-                        if (cliente.ClienteID == ((Cliente)cbClientes.SelectedItem).ClienteID)
+                        if (cliente.ClienteID == ((Cliente)cbClientes.SelectedItem).ClienteID) 
                         {
-                            string mensaje = carritoBLL.AgregarCarrito(cliente.ClienteID);
+                            string mensaje = carritoBLL.AgregarCarrito(cliente.ClienteID); //ok!
                             MessageBox.Show(mensaje);
-                            UpdateGral();
+                            completarListadoClientes();
                         }
                     }
                 }
@@ -87,31 +87,9 @@ namespace UI
                 if (cbClientes.SelectedValue != null)
                 {
                     btnNuevoCarrito.Enabled = true;
-                    /*lstClientes = clientesBLL.GetClientes();
-                    foreach (Cliente cliente in lstClientes)
-                    {
-                        if (cliente.ClienteID == ((Cliente)cbClientes.SelectedItem).ClienteID)
-                        {
-                            lstCarritos = clientesBLL.getCarritosCliente(cliente.ClienteID);
-                            if (lstCarritos.Count <= 0)
-                            {
-                                cbCarritosCliente.Enabled = false;
-                                cbCarritosCliente.DataSource = null;
-                                throw new Exception("El Cliente no posee carritos");
-                            }
-                            else
-                            {
-                                cbCarritosCliente.DataSource = null;
-                                cbCarritosCliente.DataSource = lstCarritos;
-                                cbCarritosCliente.DisplayMember = "CARRITOID";
-                                cbCarritosCliente.ValueMember = "CARRITOID";
-                                //lblCarritoID.Text = ((Carrito)cbCarritosCliente.SelectedItem).CarritoID.ToString();
-                                cbCarritosCliente.Enabled = true;
-                            }
-                        }
-                    }*/
-                    lstCarritos.Clear();
-                    lstCarritos = clientesBLL.getCarritosCliente(((Cliente)cbClientes.SelectedItem).ClienteID);
+                    //lstCarritos.Clear();
+                    //lstCarritos = clientesBLL.getCarritosCliente(((Cliente)cbClientes.SelectedItem).ClienteID);
+                    lstCarritos = ((Cliente)cbClientes.SelectedItem).lstCarritos;
                     if (lstCarritos.Count <= 0)
                     {
                         cbCarritosCliente.Enabled = false;
@@ -124,7 +102,6 @@ namespace UI
                         cbCarritosCliente.DataSource = lstCarritos;
                         cbCarritosCliente.DisplayMember = "CARRITOID";
                         cbCarritosCliente.ValueMember = "CARRITOID";
-                        //lblCarritoID.Text = ((Carrito)cbCarritosCliente.SelectedItem).CarritoID.ToString();
                         cbCarritosCliente.Enabled = true;
                     }
                 }
@@ -145,9 +122,9 @@ namespace UI
                 {
                     dgv_Carrito.DataSource = null;
                     //lstCarritoProducto = CarritoProductoBLL.getCarritoProductos(((Carrito)cbCarritosCliente.SelectedItem).CarritoID);
-                    lstCarritoProducto = CarritoProductoBLL.getDetalleCarritoProducto(((Carrito)cbCarritosCliente.SelectedItem).CarritoID);
-                    dgv_Carrito.DataSource = lstCarritoProducto;
-                    lblEstadoCarrito.Text = carritoBLL.getEstadoCarrito(((Carrito)cbCarritosCliente.SelectedItem).CarritoID).ToString();
+                    //lstCarritoProducto = CarritoProductoBLL.getDetalleCarritoProducto(((Carrito)cbCarritosCliente.SelectedItem).CarritoID);
+                    //dgv_Carrito.DataSource = lstCarritoProducto;
+                    //lblEstadoCarrito.Text = carritoBLL.getEstadoCarrito(((Carrito)cbCarritosCliente.SelectedItem).CarritoID).ToString();
                     updateCarritoDGV();
                 }
             }
@@ -194,7 +171,7 @@ namespace UI
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
-        private void llenarCB()
+        private void llenarCB() //ok!
         {
             cbCategorias.DataSource = null;
             cbCategorias.DataSource = productosBLL.getCategorias();

@@ -28,7 +28,7 @@ namespace Data
                 }
                 string mensajeSalida = "Carrito creado con éxito";
                 return mensajeSalida;
-            }catch (Exception ex) { throw; }
+            }catch (Exception ex) { throw new Exception("Ocurrió un error al agregar el carrito.", ex); }
         }
 
 

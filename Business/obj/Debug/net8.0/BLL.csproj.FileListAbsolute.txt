@@ -1,0 +1,6 @@
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\Business\obj\Debug\net8.0\BLL.csproj.AssemblyReference.cache
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\Business\obj\Debug\net8.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\Business\obj\Debug\net8.0\BLL.AssemblyInfoInputs.cache
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\Business\obj\Debug\net8.0\BLL.AssemblyInfo.cs
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\Business\obj\Debug\net8.0\BLL.csproj.CoreCompileInputs.cache
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\Business\obj\Debug\net8.0\BLL.sourcelink.json

@@ -32,10 +32,11 @@ namespace Data
             try
             {
                 List<CarritoProducto> lstCarritoProducto = new List<CarritoProducto>();
+                
                 using (SqlConnection conn = new SqlConnection(DBConnection.GetDBAccess()))
                 {
                     conn.Open();
-                    string query = "SELECT * FROM CARRITO_PRODUCTO WHERE CARRITOID = @IdCarrito";
+                    string query = "SELECT CARRITOID, PRODUCTOID, CANTIDAD, PRECIO_UNITARIO FROM CARRITO_PRODUCTO WHERE CARRITOID = @IdCarrito";
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("IdCarrito", idCarrito);
@@ -44,8 +45,10 @@ namespace Data
                             while (reader.Read())
                             {
                                 CarritoProducto cp = new CarritoProducto();
-                                cp.CarritoID = reader.GetInt32(0);
-                                cp.ProductoID = reader.GetInt32(1);
+                                cp.Carrito = new Carrito();
+                                cp.Carrito.CarritoID = reader.GetInt32(0);
+                                cp.Producto = new Producto();
+                                cp.Producto.ProductoID = reader.GetInt32(1);
                                 cp.Cantidad = reader.GetInt32(2);
                                 cp.PrecioUnitario = reader.GetDouble(3);
                                 lstCarritoProducto.Add(cp);

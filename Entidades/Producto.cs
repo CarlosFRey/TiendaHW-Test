@@ -14,6 +14,7 @@ namespace Entidades
         private int stock;
         private double precio;
         private string categoria;
+        private List<CarritoProducto> carritoProductos;
 
         public int ProductoID { get => productoID; set => productoID = value; }
         public string Modelo { get => modelo; set => modelo = value; }
@@ -21,8 +22,6 @@ namespace Entidades
         public int Stock { get => stock; set => stock = value; }
         public double Precio { get => precio; set => precio = value; }
         public string Categoria { get => categoria; set => categoria = value; }
-
-        public List<CarritoProducto> CarritoProductos { get; set; } = new List<CarritoProducto>();
-        public List<RemitoProducto> RemitoProductos { get; set; } = new List<RemitoProducto>();
+        public List<CarritoProducto> CarritoProductos { get => carritoProductos; set => carritoProductos = value; }
     }
 }
