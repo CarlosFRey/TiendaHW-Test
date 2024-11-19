@@ -38,8 +38,8 @@ namespace Business
                 using (var trx = new TransactionScope())
                 {
                     string patronEmail = @"^[^@\s]+@[^@\s]+\.[^@\s]+$"; // Copiado de internet, funciona... investigar
-                    return Regex.IsMatch(email, patronEmail);
                     trx.Complete();
+                    return Regex.IsMatch(email, patronEmail);
                 }
             }
             catch (Exception ex) { throw; }
@@ -57,8 +57,8 @@ namespace Business
                     {
                         cliente.lstCarritos = clienteDao.getCarritosCliente(cliente.ClienteID);
                     }
-                    return lstClientes;
                     trx.Complete();
+                    return lstClientes;
                 }
             }
             catch (Exception ex) { throw; }
@@ -71,8 +71,8 @@ namespace Business
                 using (var trx = new TransactionScope())
                 {
                     if (clienteDao.encontrarClienteID(clienteId) == false) { throw new Exception("No se ha encontrado el cliente"); }
-                    return clienteDao.getCarritosCliente(clienteId);
                     trx.Complete();
+                    return clienteDao.getCarritosCliente(clienteId);
                 }
             }catch (Exception ex) { throw; }
             

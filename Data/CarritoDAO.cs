@@ -1,4 +1,5 @@
 ﻿using Entidades;
+using Mapper;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -10,6 +11,7 @@ namespace Data
 {
     public class CarritoDAO
     {
+        ClientesDAO clientedao = new ClientesDAO();
         public string AgregarCarrito(int clienteCarrito) 
         {
             try
@@ -55,6 +57,34 @@ namespace Data
                     }
                 }
                 return estado;
+            }
+            catch (Exception ex) { throw; }
+        }
+
+        public Carrito GetCarrito(int idCarrito)
+        {
+            try
+            {
+                Carrito carrito = new Carrito();
+                using (SqlConnection conn = new SqlConnection(DBConnection.GetDBAccess()))
+                {
+                    conn.Open();
+                    string query = "SELECT CARRITOID, CLIENTE_ID, MONTO_TOTAL, ESTADO FROM CARRITO WHERE CARRITOID = @CarritoId";
+
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@CarritoId", idCarrito);
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                Cliente cliente = clientedao.GetCliente(Convert.ToInt32(reader["CLIENTE_ID"]));
+                                carrito = CarritoMapper.Map(reader,cliente);
+                            }
+                        }
+                    }
+                }
+                return carrito;
             }
             catch (Exception ex) { throw; }
         }

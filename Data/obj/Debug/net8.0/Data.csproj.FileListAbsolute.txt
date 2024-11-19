@@ -30,3 +30,5 @@ E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\Data\obj\Debu
 E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\Data\obj\Debug\net8.0\refint\Data.dll
 E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\Data\obj\Debug\net8.0\Data.pdb
 E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\Data\obj\Debug\net8.0\ref\Data.dll
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\Data\bin\Debug\net8.0\Mapper.dll
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\Data\bin\Debug\net8.0\Mapper.pdb

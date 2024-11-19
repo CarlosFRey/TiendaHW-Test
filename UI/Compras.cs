@@ -23,6 +23,7 @@ namespace UI
 
         private void Compras_Load(object sender, EventArgs e)
         {
+            dgv_Productos.SelectionChanged += dgv_Productos_SelectionChanged;
             llenarDGV();
             llenarCB();
         }
@@ -55,6 +56,7 @@ namespace UI
         private void llenarDGV()
         {
             dgv_Productos.DataSource = null;
+            dgv_Productos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgv_Productos.DataSource = productoBLL.getProductos(0);
             dgv_Productos.Columns["Precio"].DefaultCellStyle.Format = "C2";
 

@@ -10,3 +10,7 @@ E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\Mapper\obj\De
 E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\Mapper\obj\Debug\net8.0\refint\Mapper.dll
 E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\Mapper\obj\Debug\net8.0\Mapper.pdb
 E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\Mapper\obj\Debug\net8.0\ref\Mapper.dll
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\Mapper\bin\Debug\net8.0\Entidades.dll
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\Mapper\bin\Debug\net8.0\Entidades.pdb
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\Mapper\obj\Debug\net8.0\Mapper.csproj.AssemblyReference.cache
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\Mapper\obj\Debug\net8.0\Mapper.csproj.Up2Date

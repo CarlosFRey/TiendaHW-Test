@@ -1,4 +1,5 @@
 ﻿using Entidades;
+using Mapper;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -53,16 +54,7 @@ namespace Data
                         {
                             while (reader.Read())
                             {
-                                Producto productolst = new Producto()
-                                {
-                                    ProductoID = Convert.ToInt32(reader["ProductoID"].ToString()),
-                                    Modelo = reader["Modelo"].ToString(),
-                                    Marca = reader["Marca"].ToString(),
-                                    Stock = Convert.ToInt32(reader["Stock"].ToString()),
-                                    Precio = Convert.ToDouble(reader["Precio"].ToString()),
-                                    Categoria = reader["ProductoID"].ToString()
-                                };
-                                listaProductos.Add(productolst);
+                                listaProductos.Add(ProductoMapper.Map(reader));
                             }
                            
                         }
@@ -97,16 +89,7 @@ namespace Data
                         {
                             while (reader.Read())
                             {
-                                Producto productolst = new Producto()
-                                {
-                                    ProductoID = Convert.ToInt32(reader["ProductoID"].ToString()),
-                                    Modelo = reader["Modelo"].ToString(),
-                                    Marca = reader["Marca"].ToString(),
-                                    Stock = Convert.ToInt32(reader["Stock"].ToString()),
-                                    Precio = Convert.ToDouble(reader["Precio"].ToString()),
-                                    Categoria = reader["Categoria"].ToString()
-                                };
-                                listaProductos.Add(productolst);
+                                listaProductos.Add(ProductoMapper.Map(reader));
                             }
                         }
                     }
@@ -237,16 +220,7 @@ namespace Data
                         {
                             while (reader.Read())
                             {
-                                Producto productolst = new Producto()
-                                {
-                                    ProductoID = Convert.ToInt32(reader["ProductoID"].ToString()),
-                                    Modelo = reader["Modelo"].ToString(),
-                                    Marca = reader["Marca"].ToString(),
-                                    Stock = Convert.ToInt32(reader["Stock"].ToString()),
-                                    Precio = Convert.ToDouble(reader["Precio"].ToString()),
-                                    Categoria = reader["Categoria"].ToString()
-                                };
-                                listaProductos.Add(productolst);
+                                listaProductos.Add(ProductoMapper.Map(reader));
                             }
                             ;
                         }
@@ -273,16 +247,8 @@ namespace Data
                         {
                             while (reader.Read())
                             {
-                                Producto productolst = new Producto()
-                                {
-                                    ProductoID = Convert.ToInt32(reader["ProductoID"].ToString()),
-                                    Modelo = reader["Modelo"].ToString(),
-                                    Marca = reader["Marca"].ToString(),
-                                    Stock = Convert.ToInt32(reader["Stock"].ToString()),
-                                    Precio = Convert.ToDouble(reader["Precio"].ToString()),
-                                    Categoria = reader["ProductoID"].ToString()
-                                };
-                                if (productolst.ProductoID == idBuscado) { productoEncontrado = productolst; }
+                                Producto producto = ProductoMapper.Map(reader);
+                                if (producto.ProductoID == idBuscado) { productoEncontrado = producto; }
                             }
                         }
                     
@@ -334,6 +300,32 @@ namespace Data
                         cmd.ExecuteNonQuery();
                     }
                 }
+            }
+            catch (Exception ex) { throw; }
+        }
+        public Producto GetProducto(int idProducto)
+        {
+            try
+            {
+                Producto producto = new Producto();
+                using (SqlConnection conn = new SqlConnection(DBConnection.GetDBAccess()))
+                {
+                    conn.Open();
+                    string query = "SELECT ProductoID, Stock, Precio FROM PRODUCTO WHERE ProductoId = @idProducto";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@idProducto", idProducto);
+
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                producto = ProductoMapper.Map(reader);
+                            }
+                        }
+                    }
+                }
+                return producto;
             }
             catch (Exception ex) { throw; }
         }

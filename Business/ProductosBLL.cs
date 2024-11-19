@@ -42,8 +42,9 @@ namespace Business
             {
                 using (var trx = new TransactionScope())
                 {
-                    return productoDAO.getProductos();
+                    List<Producto> lstProductos = productoDAO.getProductos();
                     trx.Complete();
+                    return lstProductos;
                 }
             }
             catch (Exception ex) { throw; }
@@ -54,8 +55,9 @@ namespace Business
             {
                 using (var trx = new TransactionScope())
                 {
-                    return productoDAO.getProductos(stock);
+                    List<Producto> lstProductos = productoDAO.getProductos(stock);
                     trx.Complete();
+                    return lstProductos;
                 }
             }
             catch (Exception ex) { throw; }
@@ -66,15 +68,18 @@ namespace Business
             {
                 using (var trx = new TransactionScope())
                 {
+                    List<Producto> lstProductos = new List<Producto>();
                     if (categoria == "Todos")
                     {
-                        return productoDAO.getProductos(stock);
+                        lstProductos =  productoDAO.getProductos(stock);
+                        trx.Complete();
                     }
                     else
                     {
-                    return productoDAO.getProductos(stock, categoria);
+                        lstProductos = productoDAO.getProductos(stock, categoria);
+                        trx.Complete();
                     }
-                    trx.Complete();
+                    return lstProductos;
                 }
             }
             catch (Exception ex) { throw; }
@@ -93,8 +98,9 @@ namespace Business
                 {
                     using (var trx = new TransactionScope())
                     {
-                        return productoDAO.modificarProducto(modificarProducto); 
+                        string mensaje = productoDAO.modificarProducto(modificarProducto); 
                         trx.Complete();
+                        return mensaje;
                     }
                 }
 
@@ -111,8 +117,8 @@ namespace Business
                     if (productoDAO.existeProducto(eliminarProducto) == false) { throw new Exception(resultado.ToString()); }
                     productoDAO.eliminarProducto(eliminarProducto);
                     if (productoDAO.existeProducto(eliminarProducto) == false) { resultado = "Producto eliminado"; }
-                    return resultado;
                     trx.Complete(); 
+                    return resultado;
                 }
             }
             catch (Exception ex) { throw; }
@@ -124,8 +130,9 @@ namespace Business
             {
                 using (var trx = new TransactionScope())
                 {
-                    return productoDAO.getCategorias();
+                    List<string> categorias = productoDAO.getCategorias();
                     trx.Complete();
+                    return categorias;
                 }
             }
             catch (Exception ex) { throw; }
@@ -140,8 +147,9 @@ namespace Business
                 {
                     using (var trx = new TransactionScope())
                     {
-                        return productoDAO.buscarProductoPorId(idBuscado);
+                        Producto producto = productoDAO.buscarProductoPorId(idBuscado);
                         trx.Complete();
+                        return producto;
                     }
                 }
             }

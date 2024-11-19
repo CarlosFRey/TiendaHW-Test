@@ -1,4 +1,5 @@
 ﻿using Entidades;
+using Mapper;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -52,18 +53,7 @@ namespace Data
                             using (SqlDataReader reader = cmd.ExecuteReader()) {
                                 while (reader.Read())
                                 {
-
-                                    Cliente cliente = new Cliente()
-                                    {
-                                        ClienteID = reader.GetInt32(0),
-                                        Nombre = reader["Nombre"].ToString(),
-                                        Apellido = reader["Apellido"].ToString(),
-                                        Cuit = Convert.ToDouble(reader["CUIT"].ToString()),
-                                        Telefono = Convert.ToDouble(reader["Telefono"].ToString()),
-                                        Email = reader["Email"].ToString(),
-                                        Direccion = reader["Direccion"].ToString()
-                                    };
-                                    listaClientes.Add(cliente);
+                                    listaClientes.Add(ClienteMapper.Map(reader));
                                 }
                             }
                         }
@@ -141,6 +131,7 @@ namespace Data
                                     if (clienteId == reader.GetInt32(1)) 
                                     {
                                         Carrito carrito = new Carrito();
+
                                         carrito.CarritoID = reader.GetInt32(0);
                                         carrito.MontoTotal = reader.GetDouble(2);
                                         carrito.Estado = reader.GetInt32(3);
@@ -155,6 +146,34 @@ namespace Data
             }
             catch (Exception ex) { throw; }
         }
+
+        public Cliente GetCliente(int clienteId)
+        {
+            try
+            {
+                Cliente cliente = new Cliente();
+                using (SqlConnection conn = new SqlConnection(DBConnection.GetDBAccess()))
+                {
+                    using (conn)
+                    {
+                        conn.Open();
+                        using (SqlCommand cmd = new SqlCommand("SELECT CLIENTEID, NOMBRE, APELLIDO, CUIT, EMAIL,TELEFONO,DIRECCION FROM CLIENTE", conn))
+                        {
+                            using (SqlDataReader reader = cmd.ExecuteReader())
+                            {
+                                while (reader.Read())
+                                {
+                                    cliente = ClienteMapper.Map(reader);
+                                }
+                            }
+                        }
+                    }
+                }
+                return cliente;
+            }
+            catch (Exception ex) { throw; }
+        }
+
 
     }
 
