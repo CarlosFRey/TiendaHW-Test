@@ -46,7 +46,7 @@ namespace Data
                             {
                                 CarritoProducto cp = new CarritoProducto();
                                 cp.Carrito = new Carrito();
-                                cp.Carrito.CarritoID = reader.GetInt32(0);
+                                cp.Carrito.CarritoID = Convert.ToInt32(reader["CARRITOID"]);
                                 cp.Producto = new Producto();
                                 cp.Producto.ProductoID = reader.GetInt32(1);
                                 cp.Cantidad = reader.GetInt32(2);

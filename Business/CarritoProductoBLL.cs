@@ -38,6 +38,7 @@ namespace Business
                 {
                     int stock = productosDAO.getStockProducto(idProducto);
                     if (Cantidad > stock) { throw new Exception("No hay suficientes productos en stock"); }
+                    productosDAO.bajarStockProducto(idProducto, Cantidad);
                     trx.Complete();
                 }
                 

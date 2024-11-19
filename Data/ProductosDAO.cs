@@ -76,7 +76,6 @@ namespace Data
         }
         public List<Producto> getProductos(int stock)
         {
-
             try
             {
                 List<Producto> listaProductos = new List<Producto>();
@@ -316,6 +315,25 @@ namespace Data
                     }
                 }
                 return stock;
+            }
+            catch (Exception ex) { throw; }
+        }
+
+        public void bajarStockProducto(int idProducto, int cantidad)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(DBConnection.GetDBAccess()))
+                {
+                    conn.Open();
+                    string query = "UPDATE PRODUCTO set STOCK = STOCK-@cantidad WHERE PRODUCTOID = @idproducto";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@cantidad", cantidad);
+                        cmd.Parameters.AddWithValue("@idproducto", idProducto);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
             }
             catch (Exception ex) { throw; }
         }
