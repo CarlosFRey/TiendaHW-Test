@@ -46,10 +46,8 @@ namespace Data
                         using (SqlDataReader reader = cmd.ExecuteReader())
                         {
                             while (reader.Read())
-                            {
-                                Carrito carrito = CarritoDAO.GetCarrito(Convert.ToInt32(reader["CARRITOID"]));
-                                Producto producto = productoDAO.GetProducto(Convert.ToInt32(reader["PRODUCTOID"]));
-                                lstCarritoProducto.Add(CarritoProductoMapper.Map(reader, carrito, producto));
+                            {   
+                                lstCarritoProducto.Add(CarritoProductoMapper.Map(reader));
                             }
                         }
                     }
@@ -58,5 +56,32 @@ namespace Data
             }
             catch (Exception ex) { throw; }
         }
+
+        public List<int> existeEnCarrito(Producto producto)
+        {
+            try
+            {
+                List<int> lstCarritos = new List<int>();
+                using (SqlConnection conn = new SqlConnection(DBConnection.GetDBAccess()))
+                {
+                    conn.Open();
+                    string query = "SELECT * FROM CARRITO_PRODUCTO where PRODUCTOID = @productoid";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@productoid", producto.ProductoID);
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                lstCarritos.Add(Convert.ToInt32(reader["CARRITOID"]));
+                            }
+                        }
+                    }
+                }
+                return lstCarritos;
+            }
+            catch (Exception ex) { throw; }
+        }
+
     }
 }

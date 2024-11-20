@@ -1,0 +1,16 @@
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\DTO\bin\Debug\net8.0\DTO.deps.json
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\DTO\bin\Debug\net8.0\DTO.dll
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\DTO\bin\Debug\net8.0\DTO.pdb
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\DTO\bin\Debug\net8.0\Entidades.dll
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\DTO\bin\Debug\net8.0\Entidades.pdb
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\DTO\obj\Debug\net8.0\DTO.csproj.AssemblyReference.cache
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\DTO\obj\Debug\net8.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\DTO\obj\Debug\net8.0\DTO.AssemblyInfoInputs.cache
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\DTO\obj\Debug\net8.0\DTO.AssemblyInfo.cs
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\DTO\obj\Debug\net8.0\DTO.csproj.CoreCompileInputs.cache
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\DTO\obj\Debug\net8.0\DTO.sourcelink.json
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\DTO\obj\Debug\net8.0\DTO.csproj.Up2Date
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\DTO\obj\Debug\net8.0\DTO.dll
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\DTO\obj\Debug\net8.0\refint\DTO.dll
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\DTO\obj\Debug\net8.0\DTO.pdb
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\DTO\obj\Debug\net8.0\ref\DTO.dll

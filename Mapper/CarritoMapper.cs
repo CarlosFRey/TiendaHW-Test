@@ -13,10 +13,11 @@ namespace Mapper
         public static Carrito Map(SqlDataReader reader, Cliente cliente)
         {
             Carrito carrito = new Carrito();
-            carrito.CarritoID = Convert.ToInt32(reader["CARRITOID"]);
-            carrito.MontoTotal = Convert.ToDouble(reader["CARRITOID"]);
-            carrito.Estado = Convert.ToInt32(reader["ESTADO"]);
+            carrito.Cliente = new Cliente();
             carrito.Cliente = cliente;
+            carrito.CarritoID = Convert.ToInt32(reader["CARRITOID"]);
+            carrito.MontoTotal = Convert.ToDouble(reader["MONTO_TOTAL"]);
+            carrito.Estado = Convert.ToInt32(reader["ESTADO"]);
             return carrito;
         }
     }

@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "..\Data\Data.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "..\Business\Business.csproj", "{58414FEA-6A71-4879-823B-A7E645C055FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapper", "..\Mapper\Mapper.csproj", "{A86FAD78-362D-4CEA-8793-04A43A66C5EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mapper", "..\Mapper\Mapper.csproj", "{A86FAD78-362D-4CEA-8793-04A43A66C5EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "..\DTO\DTO.csproj", "{DAD0E8F9-DA22-4B30-BBAD-BAB45425648C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{A86FAD78-362D-4CEA-8793-04A43A66C5EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A86FAD78-362D-4CEA-8793-04A43A66C5EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A86FAD78-362D-4CEA-8793-04A43A66C5EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAD0E8F9-DA22-4B30-BBAD-BAB45425648C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAD0E8F9-DA22-4B30-BBAD-BAB45425648C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAD0E8F9-DA22-4B30-BBAD-BAB45425648C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAD0E8F9-DA22-4B30-BBAD-BAB45425648C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

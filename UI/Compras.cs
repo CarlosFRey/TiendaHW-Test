@@ -131,12 +131,7 @@ namespace UI
             try
             {
                 Producto eliminarProducto = new Producto();
-                eliminarProducto.Marca = txtEliminarMarca.Text;
-                eliminarProducto.Modelo = txtEliminarModelo.Text;
-                eliminarProducto.ProductoID = Convert.ToInt32(txtEliminarID.Text);
-                eliminarProducto.Stock = 0;
-                eliminarProducto.Precio = 0;
-                eliminarProducto.Categoria = " ";
+                eliminarProducto = productoBLL.buscarProductoPorId(Convert.ToInt32(txtEliminarID.Text));
                 MessageBox.Show(productoBLL.eliminarProducto(eliminarProducto));
                 llenarDGV();
             }

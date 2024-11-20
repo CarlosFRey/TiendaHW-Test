@@ -14,6 +14,7 @@ namespace Business
     public class ProductosBLL
     {
         private ProductosDAO productoDAO = new ProductosDAO();
+        private CarritoProductoDAO carritoProductoDAO = new CarritoProductoDAO();
 
         public void GuardarProducto(Producto producto)
         {
@@ -115,6 +116,9 @@ namespace Business
                 {
                     string resultado = "No se encontraron productos";
                     if (productoDAO.existeProducto(eliminarProducto) == false) { throw new Exception(resultado.ToString()); }
+                    List<int> lstCarritos = carritoProductoDAO.existeEnCarrito(eliminarProducto);
+                    if (lstCarritos.Count != 0) {throw new Exception("No se puede eliminar un producto existente en carritos activos, elimine primero el producto de los carritos");}
+                    if (eliminarProducto.Stock != 0) { throw new Exception("No se puede eliminar un producto cuyo stock sea diferente a 0, modifique antes el stock"); }
                     productoDAO.eliminarProducto(eliminarProducto);
                     if (productoDAO.existeProducto(eliminarProducto) == false) { resultado = "Producto eliminado"; }
                     trx.Complete(); 

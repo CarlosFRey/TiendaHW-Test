@@ -100,6 +100,7 @@
       "System.Security.Principal.Windows/4.7.0": {},
       "Business/1.0.0": {
         "dependencies": {
+          "DTO": "1.0.0",
           "Data": "1.0.0",
           "Entidades": "1.0.0"
         },
@@ -119,6 +120,17 @@
         },
         "runtime": {
           "Data.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "DTO/1.0.0": {
+        "dependencies": {
+          "Entidades": "1.0.0"
+        },
+        "runtime": {
+          "DTO.dll": {
             "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -242,6 +254,11 @@
       "sha512": ""
     },
     "Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DTO/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

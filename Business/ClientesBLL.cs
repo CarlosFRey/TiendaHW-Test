@@ -13,6 +13,7 @@ namespace Business
     public class ClientesBLL
     {
         public ClientesDAO clienteDao = new ClientesDAO();
+        public CarritoProductoDAO CarritoProductoDAO = new CarritoProductoDAO();
         public void guardarCliente(Cliente cliente)
         {
             try
@@ -68,10 +69,17 @@ namespace Business
         {
             try
             {
-                using (var trx = new TransactionScope())
+                //using (var trx = new TransactionScope())
                 {
                     if (clienteDao.encontrarClienteID(clienteId) == false) { throw new Exception("No se ha encontrado el cliente"); }
-                    trx.Complete();
+                    List<Carrito> lstCarritos = clienteDao.getCarritosCliente(clienteId);
+                    foreach (var carrito in lstCarritos)
+                    {
+                        Cliente cliente = clienteDao.GetCliente(clienteId);
+                        carrito.Cliente = cliente;
+                        carrito.CarritoProductos = CarritoProductoDAO.getCarritoProductos(carrito.CarritoID);
+                    }
+                    //trx.Complete();
                     return clienteDao.getCarritosCliente(clienteId);
                 }
             }catch (Exception ex) { throw; }

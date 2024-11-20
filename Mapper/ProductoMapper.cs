@@ -23,7 +23,7 @@ namespace Mapper
                 Marca = reader["Marca"].ToString(),
                 Stock = Convert.ToInt32(reader["Stock"].ToString()),
                 Precio = Convert.ToDouble(reader["Precio"].ToString()),
-                Categoria = reader["ProductoID"].ToString()
+                Categoria = reader["Categoria"].ToString()
             };
             return newProducto;
         }

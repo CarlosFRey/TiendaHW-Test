@@ -1,4 +1,5 @@
 ﻿using Business;
+using DTO;
 using Entidades;
 using System;
 using System.Collections.Generic;
@@ -23,7 +24,7 @@ namespace UI
         List<Producto> lstProductos = new List<Producto>();
         ProductosBLL productosBLL = new ProductosBLL();
         CarritoProductoBLL CarritoProductoBLL = new CarritoProductoBLL();
-        List<DetalleCarrito> lstCarritoProducto = new List<DetalleCarrito>();
+        List<DetalleCarrito> lstDetalleCarritoProducto = new List<DetalleCarrito>();
         int actualProd = 0;
 
         public CompletarCarrito()
@@ -131,9 +132,20 @@ namespace UI
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
         public void updateCarritoDGV()
+        {   
+            dgv_Carrito.DataSource = null;
+            List<CarritoProducto> lstCP = CarritoProductoBLL.getCarritoProductos(((Carrito)cbCarritosCliente.SelectedItem).CarritoID);
+            //lstCarritoProducto = CarritoProductoBLL.getDetalleCarritoProducto(((Carrito)cbCarritosCliente.SelectedItem).CarritoID);
+            lstDetalleCarritoProducto = DGVDetalleCarritoDTO.DTO(lstCP);
+            dgv_Carrito.DataSource = lstDetalleCarritoProducto;
+            lblEstadoCarrito.Text = carritoBLL.getEstadoCarrito(((Carrito)cbCarritosCliente.SelectedItem).CarritoID).ToString();
+            updateTXTs();
+        }
+        public void updateTXTs()
         {
+
             int cant = 0; double monto = 0;
-            foreach (var item in lstCarritoProducto)
+            foreach (var item in lstDetalleCarritoProducto)
             {
                 cant += item.Cantidad;
                 monto += item.Cantidad * item.PrecioUnitario;
@@ -142,11 +154,6 @@ namespace UI
             txtMontoTotal.Text = string.Format("{0:C2}", (monto));
             //txtFinalPesos.Text = (monto*Convert.ToDouble(txtValorDolar.Text)).ToString();
             txtFinalPesos.Text = string.Format("{0:C2}", (monto * Convert.ToDouble(txtValorDolar.Text)));
-            
-            dgv_Carrito.DataSource = null;
-            lstCarritoProducto = CarritoProductoBLL.getDetalleCarritoProducto(((Carrito)cbCarritosCliente.SelectedItem).CarritoID);
-            dgv_Carrito.DataSource = lstCarritoProducto;
-            lblEstadoCarrito.Text = carritoBLL.getEstadoCarrito(((Carrito)cbCarritosCliente.SelectedItem).CarritoID).ToString();
         }
 
         private void btnAgregarProductos_Click(object sender, EventArgs e)

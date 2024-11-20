@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Transactions;
 using Data;
+using DTO;
 using Entidades;
 
 namespace Business
@@ -50,10 +51,16 @@ namespace Business
         {
             try
             {
-                using (var trx = new TransactionScope())
+                //using (var trx = new TransactionScope())
                 {
                     List<CarritoProducto> newlst = carritoProductoDAO.getCarritoProductos(idCarrito);
-                    trx.Complete();
+                    foreach (var CP in newlst)
+                    {
+                        CP.Carrito = carritoDAO.GetCarrito(CP.Carrito.CarritoID);
+                        CP.Producto = productosDAO.GetProducto(CP.Producto.ProductoID);
+                    }
+
+                    //trx.Complete();
                     return newlst;
                 }
                 
@@ -67,18 +74,9 @@ namespace Business
             {
                 using (var trx = new TransactionScope())
                 {
-                    List<DetalleCarrito> detalleCarrito = new List<DetalleCarrito>();
-                    List<CarritoProducto> lstCP = carritoProductoDAO.getCarritoProductos(idCarrito);
-                    foreach (var CarritoProducto in lstCP)
-                    {
-                        DetalleCarrito nuevaLinea = new DetalleCarrito();
-                        Producto detalleProducto = productosDAO.buscarProductoPorId(CarritoProducto.Producto.ProductoID);
-                        nuevaLinea.Modelo = detalleProducto.Modelo;
-                        nuevaLinea.Marca = productosDAO.buscarProductoPorId(CarritoProducto.Producto.ProductoID).Marca;
-                        nuevaLinea.Cantidad = CarritoProducto.Cantidad;
-                        nuevaLinea.PrecioUnitario = CarritoProducto.PrecioUnitario;
-                        detalleCarrito.Add(nuevaLinea);
-                    }
+                    //List<DetalleCarrito> detalleCarrito = new List<DetalleCarrito>();
+                    //List<CarritoProducto> lstCP = carritoProductoDAO.getCarritoProductos(idCarrito);
+                    List<DetalleCarrito> detalleCarrito = DGVDetalleCarritoDTO.DTO(carritoProductoDAO.getCarritoProductos(idCarrito));
                     trx.Complete();
                     return detalleCarrito;
                 }

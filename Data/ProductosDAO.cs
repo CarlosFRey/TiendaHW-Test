@@ -115,6 +115,7 @@ namespace Data
                         cmd.Parameters.AddWithValue("@Marca", modificarProducto.Marca);
                         cmd.Parameters.AddWithValue("@Stock", modificarProducto.Stock);
                         cmd.Parameters.AddWithValue("@Precio", modificarProducto.Precio);
+                        cmd.Parameters.AddWithValue("@Categoria", modificarProducto.Categoria);
                         cmd.ExecuteNonQuery();
                         resultadoOP = "Modificación exitosa";
                     }
@@ -222,7 +223,6 @@ namespace Data
                             {
                                 listaProductos.Add(ProductoMapper.Map(reader));
                             }
-                            ;
                         }
                     }
                 }
@@ -311,7 +311,7 @@ namespace Data
                 using (SqlConnection conn = new SqlConnection(DBConnection.GetDBAccess()))
                 {
                     conn.Open();
-                    string query = "SELECT ProductoID, Stock, Precio FROM PRODUCTO WHERE ProductoId = @idProducto";
+                    string query = "SELECT ProductoID, Modelo, Marca, Stock, Precio, Categoria FROM PRODUCTO WHERE ProductoId = @idProducto";
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@idProducto", idProducto);

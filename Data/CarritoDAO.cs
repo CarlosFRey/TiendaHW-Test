@@ -66,12 +66,12 @@ namespace Data
             try
             {
                 Carrito carrito = new Carrito();
-                using (SqlConnection conn = new SqlConnection(DBConnection.GetDBAccess()))
+                using (SqlConnection conn2 = new SqlConnection(DBConnection.GetDBAccess()))
                 {
-                    conn.Open();
+                    conn2.Open();
                     string query = "SELECT CARRITOID, CLIENTE_ID, MONTO_TOTAL, ESTADO FROM CARRITO WHERE CARRITOID = @CarritoId";
 
-                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    using (SqlCommand cmd = new SqlCommand(query, conn2))
                     {
                         cmd.Parameters.AddWithValue("@CarritoId", idCarrito);
                         using (SqlDataReader reader = cmd.ExecuteReader())
@@ -79,7 +79,7 @@ namespace Data
                             while (reader.Read())
                             {
                                 Cliente cliente = clientedao.GetCliente(Convert.ToInt32(reader["CLIENTE_ID"]));
-                                carrito = CarritoMapper.Map(reader,cliente);
+                                carrito = CarritoMapper.Map(reader, cliente);
                             }
                         }
                     }
