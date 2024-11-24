@@ -83,5 +83,80 @@ namespace Data
             catch (Exception ex) { throw; }
         }
 
+        public int getIDproductoDesdeDetalleCarrito(int nroFila)
+        {
+            try
+            {
+                int idProducto = -1;
+                int stock =0;
+                using (SqlConnection conn = new SqlConnection(DBConnection.GetDBAccess()))
+                {
+                    conn.Open();
+                    string query = "SELECT * FROM (SELECT CARRITOID,PRODUCTOID,CANTIDAD,PRECIO_UNITARIO,ROW_NUMBER() OVER (ORDER BY CARRITOID, PRODUCTOID) AS NumeroFila FROM CARRITO_PRODUCTO) AS Numeradas WHERE NumeroFila = @nroFila;";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@nroFila", nroFila);
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                idProducto = (Convert.ToInt32(reader["PRODUCTOID"]));
+                                stock = (Convert.ToInt32(reader["CANTIDAD"]));
+                            }
+                        }
+                    }
+                }
+                return idProducto;
+            }
+            catch (Exception ex) { throw; }
+        }
+
+        public void eliminarProductoDeCarritoProducto(int idCarrito, int idProducto)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(DBConnection.GetDBAccess()))
+                {
+                    conn.Open();
+                    string deletequery = "DELETE FROM CARRITO_PRODUCTO WHERE CARRITOID = @idcarrito AND PRODUCTOID =@idprodcto";
+                    using (SqlCommand cmd = new SqlCommand(deletequery, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@idcarrito", idCarrito);
+                        cmd.Parameters.AddWithValue("@idprodcto", idProducto);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex) { throw; }
+        }
+
+        public CarritoProducto getProductoDesdeDetalleCarrito(int idCarrito, int idProducto)
+        {
+            try
+            {
+                CarritoProducto carritoProducto = new CarritoProducto();
+                using (SqlConnection conn = new SqlConnection(DBConnection.GetDBAccess()))
+                {
+                    conn.Open();
+                    string query = "SELECT CARRITOID,PRODUCTOID,CANTIDAD,PRECIO_UNITARIO FROM CARRITO_PRODUCTO WHERE CARRITOID = @idcarrito AND PRODUCTOID = @idProducto;";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@idProducto", idProducto);
+                        cmd.Parameters.AddWithValue("@idcarrito", idCarrito);
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                carritoProducto = CarritoProductoMapper.Map(reader);
+                            }
+                        }
+                    }
+                }
+                return carritoProducto;
+            }
+            catch (Exception ex) { throw; }
+        }
+
     }
+
 }

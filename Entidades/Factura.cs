@@ -8,20 +8,34 @@ namespace Entidades
 {
     public class Factura
     {
-        private int nroFactura;
-        private int clienteID;
-        private Cliente cliente;
-        private int carritoID;
+        private int facturaID;
+        private DateTime fecha;
         private Carrito carrito;
-        private double monto_total;
-        private int estado;
+        private Cliente cliente;
+        private List<DetalleFactura> detalles;
+        private double subtotal;
+        private double impuestos;
+        private double total;
 
-        public int NroFactura { get => nroFactura; set => nroFactura = value; }
-        public int ClienteID { get => clienteID; set => clienteID = value; }
-        public Cliente Cliente { get => cliente; set => cliente = value; }
-        public int CarritoID { get => carritoID; set => carritoID = value; }
+        public int FacturaID { get => facturaID; set => facturaID = value; }
+        public DateTime Fecha { get => fecha; set => fecha = value; }
         public Carrito Carrito { get => carrito; set => carrito = value; }
-        public double Monto_total { get => monto_total; set => monto_total = value; }
-        public int Estado { get => estado; set => estado = value; }
+        public Cliente Cliente { get => cliente; set => cliente = value; }
+        public List<DetalleFactura> Detalles { get => detalles; set => detalles = value; }
+        public double Subtotal { get => subtotal; set => subtotal = value; }
+        public double Impuestos { get => impuestos; set => impuestos = value; }
+        public double Total { get => total; set => total = value; }
+
+        public Factura()
+        {
+            detalles = new List<DetalleFactura>();
+        }
+
+        public void CalcularTotales()
+        {
+            subtotal = detalles.Sum(d => d.Cantidad * d.PrecioUnitario);
+            impuestos = subtotal * 0.21; // Suponiendo un 21% de IVA
+            total = subtotal + impuestos;
+        }
     }
 }

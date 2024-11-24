@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "gik8MZi82eY=",
+  "dgSpecHash": "uJsHgFNyVPo=",
   "success": true,
   "projectFilePath": "E:\\UAI\\5to Cuatrimestre\\LUG\\Programas\\TiendaHW-Test1\\TiendaHW-Test\\UI\\UI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\reyca\\.nuget\\packages\\fontawesome.sharp\\6.6.0\\fontawesome.sharp.6.6.0.nupkg.sha512",
     "C:\\Users\\reyca\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\reyca\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\reyca\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",

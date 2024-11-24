@@ -128,7 +128,7 @@
             label6.AutoSize = true;
             label6.Location = new Point(6, 195);
             label6.Name = "label6";
-            label6.Size = new Size(55, 15);
+            label6.Size = new Size(56, 15);
             label6.TabIndex = 8;
             label6.Text = "Teléfono:";
             // 
@@ -160,7 +160,7 @@
             label4.AutoSize = true;
             label4.Location = new Point(6, 107);
             label4.Name = "label4";
-            label4.Size = new Size(71, 15);
+            label4.Size = new Size(72, 15);
             label4.TabIndex = 4;
             label4.Text = "CUIL / CUIT:";
             // 
@@ -216,6 +216,7 @@
             Controls.Add(dgvClientes);
             Controls.Add(label1);
             Name = "Clientes";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Clientes";
             Load += Clientes_Load;
             ((System.ComponentModel.ISupportInitialize)dgvClientes).EndInit();

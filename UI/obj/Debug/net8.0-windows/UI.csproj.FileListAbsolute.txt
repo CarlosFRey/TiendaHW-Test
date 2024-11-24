@@ -76,3 +76,5 @@ E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\bin\Debug\
 E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\bin\Debug\net8.0-windows\Mapper.pdb
 E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\bin\Debug\net8.0-windows\DTO.dll
 E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\bin\Debug\net8.0-windows\DTO.pdb
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\bin\Debug\net8.0-windows\FontAwesome.Sharp.dll
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\obj\Debug\net8.0-windows\UI.Login.resources

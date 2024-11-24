@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +17,7 @@ namespace Business
         CarritoProductoDAO carritoProductoDAO = new CarritoProductoDAO();
         ProductosDAO productosDAO = new ProductosDAO();
         CarritoDAO carritoDAO = new CarritoDAO();
+        ProductosBLL productosBLL = new ProductosBLL();
 
         public void AgregarProductosCarrito(int idCarrito, int idProducto, int Cantidad, double Precio)
         {
@@ -83,5 +86,35 @@ namespace Business
             }
             catch (Exception ex) { throw; }
         }
+
+        public int getIDproductoDesdeDetalleCarrito(int nroFila)
+        {
+            try
+            {
+                if (carritoProductoDAO.getIDproductoDesdeDetalleCarrito(nroFila) == -1) { throw new Exception("Error en la eliminación del producto"); }
+                return carritoProductoDAO.getIDproductoDesdeDetalleCarrito(nroFila);
+
+            }
+            catch (Exception ex) { throw; }
+        }
+
+        public string eliminarProductoDeCarritoProducto(int idCarrito, int idProducto)
+        {
+            try
+            {
+                using (var trx = new TransactionScope())
+                {
+                    //int stock = carritoProductoDAO.getProductoDesdeDetalleCarrito(idCarrito, idProducto).Cantidad;
+                    Producto producto = productosDAO.GetProducto(idProducto);
+                    producto.Stock += carritoProductoDAO.getProductoDesdeDetalleCarrito(idCarrito, idProducto).Cantidad;
+                    carritoProductoDAO.eliminarProductoDeCarritoProducto(idCarrito, idProducto);
+                    productosBLL.modificarProducto(producto);
+                    trx.Complete();
+                    return "Se elimino el stock del carrito y se devolvió a stock correctamente";
+                }
+            }
+            catch (Exception ex) { throw; }
+        }
+
     }
 }

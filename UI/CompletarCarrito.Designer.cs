@@ -71,6 +71,9 @@
             txtCantProd = new TextBox();
             groupBox4 = new GroupBox();
             lblEstadoCarrito = new Label();
+            groupBox5 = new GroupBox();
+            btnEliminar = new Button();
+            lblProductoaEliminar = new Label();
             gpProductos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_Productos).BeginInit();
             groupBox3.SuspendLayout();
@@ -80,6 +83,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             groupBox2.SuspendLayout();
             groupBox4.SuspendLayout();
+            groupBox5.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -104,6 +108,7 @@
             // 
             // cbClientes
             // 
+            cbClientes.Cursor = Cursors.Hand;
             cbClientes.FormattingEnabled = true;
             cbClientes.Location = new Point(6, 40);
             cbClientes.Name = "cbClientes";
@@ -123,6 +128,7 @@
             // cbCarritosCliente
             // 
             cbCarritosCliente.BackColor = Color.White;
+            cbCarritosCliente.Cursor = Cursors.Hand;
             cbCarritosCliente.FormattingEnabled = true;
             cbCarritosCliente.Location = new Point(5, 91);
             cbCarritosCliente.Name = "cbCarritosCliente";
@@ -221,11 +227,12 @@
             // 
             // btnAgregarProductos
             // 
+            btnAgregarProductos.Cursor = Cursors.Hand;
             btnAgregarProductos.Enabled = false;
             btnAgregarProductos.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAgregarProductos.Location = new Point(8, 198);
             btnAgregarProductos.Name = "btnAgregarProductos";
-            btnAgregarProductos.Size = new Size(163, 43);
+            btnAgregarProductos.Size = new Size(163, 48);
             btnAgregarProductos.TabIndex = 14;
             btnAgregarProductos.Text = "Agregar al Carrito";
             btnAgregarProductos.UseVisualStyleBackColor = true;
@@ -292,10 +299,10 @@
             dgv_Productos.AllowUserToAddRows = false;
             dgv_Productos.AllowUserToDeleteRows = false;
             dgv_Productos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv_Productos.Location = new Point(641, 118);
+            dgv_Productos.Location = new Point(644, 118);
             dgv_Productos.Name = "dgv_Productos";
             dgv_Productos.ReadOnly = true;
-            dgv_Productos.Size = new Size(529, 381);
+            dgv_Productos.Size = new Size(550, 418);
             dgv_Productos.TabIndex = 16;
             dgv_Productos.CellContentClick += dgv_Productos_CellContentClick;
             // 
@@ -307,9 +314,9 @@
             groupBox3.Controls.Add(cbCategorias);
             groupBox3.Controls.Add(radioConStock);
             groupBox3.Controls.Add(radioSinStock);
-            groupBox3.Location = new Point(641, 36);
+            groupBox3.Location = new Point(644, 36);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(529, 76);
+            groupBox3.Size = new Size(550, 76);
             groupBox3.TabIndex = 17;
             groupBox3.TabStop = false;
             groupBox3.Text = "Filtros de Productos Mostrados";
@@ -339,7 +346,7 @@
             radioTodos.Checked = true;
             radioTodos.Location = new Point(110, 22);
             radioTodos.Name = "radioTodos";
-            radioTodos.Size = new Size(56, 19);
+            radioTodos.Size = new Size(57, 19);
             radioTodos.TabIndex = 17;
             radioTodos.TabStop = true;
             radioTodos.Text = "Todos";
@@ -348,6 +355,7 @@
             // 
             // cbCategorias
             // 
+            cbCategorias.Cursor = Cursors.Hand;
             cbCategorias.FormattingEnabled = true;
             cbCategorias.Location = new Point(172, 47);
             cbCategorias.Name = "cbCategorias";
@@ -385,8 +393,9 @@
             dgv_Carrito.Location = new Point(193, 118);
             dgv_Carrito.Name = "dgv_Carrito";
             dgv_Carrito.ReadOnly = true;
-            dgv_Carrito.Size = new Size(442, 381);
+            dgv_Carrito.Size = new Size(445, 418);
             dgv_Carrito.TabIndex = 18;
+            dgv_Carrito.CellContentClick += dgv_Carrito_CellContentClick;
             // 
             // groupBox1
             // 
@@ -435,7 +444,7 @@
             groupBox2.Controls.Add(pictureBox2);
             groupBox2.Location = new Point(193, 36);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(442, 76);
+            groupBox2.Size = new Size(445, 76);
             groupBox2.TabIndex = 21;
             groupBox2.TabStop = false;
             groupBox2.Text = "Carrito";
@@ -509,7 +518,7 @@
             groupBox4.Controls.Add(lblEstadoCarrito);
             groupBox4.Location = new Point(4, 428);
             groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(183, 71);
+            groupBox4.Size = new Size(183, 50);
             groupBox4.TabIndex = 22;
             groupBox4.TabStop = false;
             groupBox4.Text = "Estado del Carrito:";
@@ -518,19 +527,55 @@
             // 
             lblEstadoCarrito.AutoSize = true;
             lblEstadoCarrito.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblEstadoCarrito.Location = new Point(8, 31);
+            lblEstadoCarrito.Location = new Point(8, 19);
             lblEstadoCarrito.Name = "lblEstadoCarrito";
             lblEstadoCarrito.Size = new Size(118, 21);
             lblEstadoCarrito.TabIndex = 0;
             lblEstadoCarrito.Text = "------------------";
             lblEstadoCarrito.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // groupBox5
+            // 
+            groupBox5.Controls.Add(btnEliminar);
+            groupBox5.Controls.Add(lblProductoaEliminar);
+            groupBox5.Location = new Point(4, 486);
+            groupBox5.Name = "groupBox5";
+            groupBox5.Size = new Size(183, 50);
+            groupBox5.TabIndex = 23;
+            groupBox5.TabStop = false;
+            groupBox5.Text = "Eliminar Producto del Carrito";
+            // 
+            // btnEliminar
+            // 
+            btnEliminar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnEliminar.BackgroundImageLayout = ImageLayout.Stretch;
+            btnEliminar.Cursor = Cursors.Hand;
+            btnEliminar.Font = new Font("Webdings", 9F, FontStyle.Regular, GraphicsUnit.Point, 2);
+            btnEliminar.Location = new Point(152, 20);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(25, 25);
+            btnEliminar.TabIndex = 1;
+            btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Click += btnEliminar_Click_1;
+            // 
+            // lblProductoaEliminar
+            // 
+            lblProductoaEliminar.AutoSize = true;
+            lblProductoaEliminar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblProductoaEliminar.Location = new Point(8, 19);
+            lblProductoaEliminar.Name = "lblProductoaEliminar";
+            lblProductoaEliminar.Size = new Size(118, 21);
+            lblProductoaEliminar.TabIndex = 0;
+            lblProductoaEliminar.Text = "------------------";
+            lblProductoaEliminar.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // CompletarCarrito
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightSteelBlue;
-            ClientSize = new Size(1182, 503);
+            ClientSize = new Size(1198, 548);
+            Controls.Add(groupBox5);
             Controls.Add(groupBox4);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
@@ -556,6 +601,8 @@
             groupBox2.PerformLayout();
             groupBox4.ResumeLayout(false);
             groupBox4.PerformLayout();
+            groupBox5.ResumeLayout(false);
+            groupBox5.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -604,5 +651,8 @@
         private PictureBox pictureBox1;
         private GroupBox groupBox4;
         private Label lblEstadoCarrito;
+        private GroupBox groupBox5;
+        private Button btnEliminar;
+        private Label lblProductoaEliminar;
     }
 }

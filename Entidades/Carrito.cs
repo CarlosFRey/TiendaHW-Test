@@ -18,6 +18,6 @@ namespace Entidades
         public List<CarritoProducto> CarritoProductos { get => carritoProductos; set => carritoProductos = value; }
         public double MontoTotal { get => montoTotal; set => montoTotal = value; }
         public int Estado { get => estado; set => estado = value; }
-        public Cliente Cliente { get => cliente; set => cliente = value; }
+        public Cliente Cliente  { get => cliente; set => cliente = value; }
     }
 }

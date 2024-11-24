@@ -23,7 +23,7 @@ namespace UI
         List<Carrito> lstCarritos = new List<Carrito>();
         List<Producto> lstProductos = new List<Producto>();
         ProductosBLL productosBLL = new ProductosBLL();
-        CarritoProductoBLL CarritoProductoBLL = new CarritoProductoBLL();
+        CarritoProductoBLL carritoProductoBLL = new CarritoProductoBLL();
         List<DetalleCarrito> lstDetalleCarritoProducto = new List<DetalleCarrito>();
         int actualProd = 0;
 
@@ -31,6 +31,7 @@ namespace UI
         {
             InitializeComponent();
             dgv_Productos.SelectionChanged += dgv_Productos_SelectionChanged;
+            dgv_Carrito.SelectionChanged += dgv_Carrito_SelectionChanged;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -44,6 +45,9 @@ namespace UI
             dgv_Carrito.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgv_Productos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             UpdateGral();
+            Image imgTacho = Image.FromFile("delete.png");
+            btnEliminar.BackgroundImage = imgTacho;
+            btnEliminar.BackgroundImageLayout = ImageLayout.Stretch;
         }
         public void UpdateGral()
         {
@@ -69,7 +73,7 @@ namespace UI
                     lstClientes = clientesBLL.GetClientes(); //ok!
                     foreach (var cliente in lstClientes)
                     {
-                        if (cliente.ClienteID == ((Cliente)cbClientes.SelectedItem).ClienteID) 
+                        if (cliente.ClienteID == ((Cliente)cbClientes.SelectedItem).ClienteID)
                         {
                             string mensaje = carritoBLL.AgregarCarrito(cliente.ClienteID); //ok!
                             MessageBox.Show(mensaje);
@@ -132,9 +136,9 @@ namespace UI
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
         public void updateCarritoDGV()
-        {   
+        {
             dgv_Carrito.DataSource = null;
-            List<CarritoProducto> lstCP = CarritoProductoBLL.getCarritoProductos(((Carrito)cbCarritosCliente.SelectedItem).CarritoID);
+            List<CarritoProducto> lstCP = carritoProductoBLL.getCarritoProductos(((Carrito)cbCarritosCliente.SelectedItem).CarritoID);
             //lstCarritoProducto = CarritoProductoBLL.getDetalleCarritoProducto(((Carrito)cbCarritosCliente.SelectedItem).CarritoID);
             lstDetalleCarritoProducto = DGVDetalleCarritoDTO.DTO(lstCP);
             dgv_Carrito.DataSource = lstDetalleCarritoProducto;
@@ -164,8 +168,9 @@ namespace UI
                 int idProducto = actualProd;
                 int stock = Convert.ToInt32(txtCantidadVenta.Text);
                 double precioVenta = Convert.ToDouble(txtAgregarPrecio.Text);
-                CarritoProductoBLL.AgregarProductosCarrito(idCarrito, idProducto, stock, precioVenta);
+                carritoProductoBLL.AgregarProductosCarrito(idCarrito, idProducto, stock, precioVenta);
                 updateCarritoDGV();
+                ActualizarDGVProductos();
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
@@ -225,6 +230,16 @@ namespace UI
             }
         }
 
+        private void dgv_Carrito_SelectionChanged(object sender, EventArgs e)
+        {
+
+            if (dgv_Carrito.SelectedRows.Count > 0)
+            {
+                DataGridViewRow filaProducto = dgv_Carrito.SelectedRows[0];
+                lblProductoaEliminar.Text = filaProducto.Cells["Modelo"].Value.ToString(); 
+            }
+        }
+
         private void txtValorDolar_TextChanged(object sender, EventArgs e)
         {
             updateCarritoDGV();
@@ -233,6 +248,38 @@ namespace UI
         private void dgv_Productos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void dgv_Carrito_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnEliminar_Click_1(object sender, EventArgs e)
+        {
+            if (dgv_Carrito.SelectedCells.Count > 0)
+            {
+                int rowIndex = dgv_Carrito.SelectedCells[0].RowIndex;
+                DataGridViewRow filaSeleccionada = dgv_Carrito.Rows[rowIndex];
+                //var valor = filaSeleccionada.Cells["Modelo"].Value;
+                //MessageBox.Show($"Valor de la celda seleccionada: {valor}; Fila seleccionada: {rowIndex+1}");
+                DialogResult eliminar = MessageBox.Show($"Se eliminaran del carrito y serán devueltas a stock {filaSeleccionada.Cells["Cantidad"].Value} unidades del producto {filaSeleccionada.Cells["Modelo"].Value} \n ¿Confirma la eliminación?", "Validacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (eliminar == DialogResult.Yes) 
+                {
+                    int IdABorrar = carritoProductoBLL.getIDproductoDesdeDetalleCarrito(rowIndex + 1);
+                    int idCarrito = ((Carrito)cbCarritosCliente.SelectedItem).CarritoID;
+                    carritoProductoBLL.eliminarProductoDeCarritoProducto(idCarrito, IdABorrar);
+                    //MessageBox.Show($"ID del producto a eliminar: {IdABorrar}");
+                    updateCarritoDGV();
+                    ActualizarDGVProductos();
+                }
+                else { MessageBox.Show("Los productos no fueron eliminados"); }
+                    
+            }
+            else
+            {
+                MessageBox.Show("No hay ninguna celda seleccionada.");
+            }
         }
     }
 }
