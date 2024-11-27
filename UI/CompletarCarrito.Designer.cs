@@ -302,7 +302,7 @@
             dgv_Productos.Location = new Point(644, 118);
             dgv_Productos.Name = "dgv_Productos";
             dgv_Productos.ReadOnly = true;
-            dgv_Productos.Size = new Size(550, 418);
+            dgv_Productos.Size = new Size(550, 487);
             dgv_Productos.TabIndex = 16;
             dgv_Productos.CellContentClick += dgv_Productos_CellContentClick;
             // 
@@ -393,7 +393,7 @@
             dgv_Carrito.Location = new Point(193, 118);
             dgv_Carrito.Name = "dgv_Carrito";
             dgv_Carrito.ReadOnly = true;
-            dgv_Carrito.Size = new Size(445, 418);
+            dgv_Carrito.Size = new Size(445, 487);
             dgv_Carrito.TabIndex = 18;
             dgv_Carrito.CellContentClick += dgv_Carrito_CellContentClick;
             // 
@@ -538,9 +538,9 @@
             // 
             groupBox5.Controls.Add(btnEliminar);
             groupBox5.Controls.Add(lblProductoaEliminar);
-            groupBox5.Location = new Point(4, 486);
+            groupBox5.Location = new Point(4, 550);
             groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(183, 50);
+            groupBox5.Size = new Size(183, 55);
             groupBox5.TabIndex = 23;
             groupBox5.TabStop = false;
             groupBox5.Text = "Eliminar Producto del Carrito";
@@ -574,7 +574,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightSteelBlue;
-            ClientSize = new Size(1198, 548);
+            ClientSize = new Size(1198, 617);
             Controls.Add(groupBox5);
             Controls.Add(groupBox4);
             Controls.Add(groupBox2);

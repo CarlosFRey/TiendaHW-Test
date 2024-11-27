@@ -1,15 +1,47 @@
+using Entidades;
+
 namespace UI
 {
     public partial class UI : Form
     {
         private static Form FormularioActivo = null;
-        public UI()
+        private static Usuario usuarioActivo;
+        public UI(Usuario usuarioLogueado)
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+            usuarioActivo = usuarioLogueado;
         }
 
         public static object Properties { get; internal set; }
+        private void UI_Load(object sender, EventArgs e)
+        {
+            Image imgTacho = Image.FromFile("logo.png");
+            pblogo.BackgroundImage = imgTacho;
+            pblogo.BackgroundImageLayout = ImageLayout.Stretch;
+            lblNombreUsuario.Text = usuarioActivo.NombreCompleto.ToString();
+            lblRolUsuario.Text = usuarioActivo.Rol.Descripcion;
+            switch (Convert.ToInt32(usuarioActivo.Rol.IdRol))
+            {
+                case 1:
+                    AbrirFormulario(new UI_Administrador());
+                    break;
+                case 2:
+                    AbrirFormulario(new CompletarCarrito());
+                    break;
+                case 3: // Corregir la sintaxis del case
+                    AbrirFormulario(new Compras());
+                    break; // Agregar break para evitar que pase al default
+                case 4:
+                    AbrirFormulario(new UIxContable());
+                    break;
+                default:
+                    this.Close(); // Cerrar el formulario actual si no es el rol esperado
+                    break;
+            }
+
+
+        }
 
         private void AbrirFormulario(Form formulario)
         {
@@ -37,13 +69,7 @@ namespace UI
             AbrirFormulario(new Ventas());
         }
 
-        private void UI_Load(object sender, EventArgs e)
-        {
-            Image imgTacho = Image.FromFile("logo.png");
-            pblogo.BackgroundImage = imgTacho;
-            pblogo.BackgroundImageLayout = ImageLayout.Stretch;
-            
-        }
+
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -53,6 +79,11 @@ namespace UI
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

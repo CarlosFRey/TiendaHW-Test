@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             Contenedor = new Panel();
-            btnGestionCompras = new Button();
             panel1 = new Panel();
+            btnLogout = new Button();
+            lblRolUsuario = new Label();
+            lblNombreUsuario = new Label();
+            label2 = new Label();
             label1 = new Label();
             pblogo = new PictureBox();
-            button1 = new Button();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pblogo).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // Contenedor
@@ -46,44 +46,88 @@
             Contenedor.BackColor = Color.Transparent;
             Contenedor.Location = new Point(-2, 96);
             Contenedor.Name = "Contenedor";
-            Contenedor.Size = new Size(1187, 619);
+            Contenedor.Size = new Size(1200, 619);
             Contenedor.TabIndex = 0;
-            // 
-            // btnGestionCompras
-            // 
-            btnGestionCompras.BackColor = Color.LightSteelBlue;
-            btnGestionCompras.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnGestionCompras.Location = new Point(1069, 16);
-            btnGestionCompras.Name = "btnGestionCompras";
-            btnGestionCompras.Size = new Size(105, 64);
-            btnGestionCompras.TabIndex = 1;
-            btnGestionCompras.Text = "Gestión de Compras";
-            btnGestionCompras.UseVisualStyleBackColor = false;
-            btnGestionCompras.Click += btnGestionCompras_Click;
             // 
             // panel1
             // 
             panel1.BackColor = Color.Black;
+            panel1.Controls.Add(btnLogout);
+            panel1.Controls.Add(lblRolUsuario);
+            panel1.Controls.Add(lblNombreUsuario);
+            panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(pblogo);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(btnGestionCompras);
             panel1.Location = new Point(1, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1184, 90);
+            panel1.Size = new Size(1197, 90);
             panel1.TabIndex = 2;
+            // 
+            // btnLogout
+            // 
+            btnLogout.BackColor = Color.CornflowerBlue;
+            btnLogout.Cursor = Cursors.Hand;
+            btnLogout.FlatStyle = FlatStyle.Popup;
+            btnLogout.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLogout.ForeColor = Color.White;
+            btnLogout.Location = new Point(1106, 45);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(75, 31);
+            btnLogout.TabIndex = 9;
+            btnLogout.Text = "Logout";
+            btnLogout.UseVisualStyleBackColor = false;
+            btnLogout.Click += btnLogout_Click;
+            // 
+            // lblRolUsuario
+            // 
+            lblRolUsuario.AutoSize = true;
+            lblRolUsuario.BackColor = Color.Transparent;
+            lblRolUsuario.Font = new Font("Imprint MT Shadow", 21.75F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
+            lblRolUsuario.ForeColor = Color.CornflowerBlue;
+            lblRolUsuario.Location = new Point(563, 53);
+            lblRolUsuario.Name = "lblRolUsuario";
+            lblRolUsuario.Size = new Size(23, 34);
+            lblRolUsuario.TabIndex = 8;
+            lblRolUsuario.Text = ".";
+            lblRolUsuario.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // lblNombreUsuario
+            // 
+            lblNombreUsuario.AutoSize = true;
+            lblNombreUsuario.BackColor = Color.Transparent;
+            lblNombreUsuario.Font = new Font("Imprint MT Shadow", 21.75F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
+            lblNombreUsuario.ForeColor = Color.DodgerBlue;
+            lblNombreUsuario.Location = new Point(563, 9);
+            lblNombreUsuario.Name = "lblNombreUsuario";
+            lblNombreUsuario.Size = new Size(23, 34);
+            lblNombreUsuario.TabIndex = 7;
+            lblNombreUsuario.Text = ".";
+            lblNombreUsuario.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Imprint MT Shadow", 21.75F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.CornflowerBlue;
+            label2.Location = new Point(460, 53);
+            label2.Name = "label2";
+            label2.Size = new Size(97, 34);
+            label2.TabIndex = 6;
+            label2.Text = "Perfil:";
+            label2.TextAlign = ContentAlignment.MiddleRight;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Impact", 48F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.RoyalBlue;
-            label1.Location = new Point(333, 7);
+            label1.Font = new Font("Imprint MT Shadow", 21.75F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.DodgerBlue;
+            label1.Location = new Point(382, 9);
             label1.Name = "label1";
-            label1.Size = new Size(534, 80);
+            label1.Size = new Size(175, 34);
             label1.TabIndex = 5;
-            label1.Text = "Gestión Comercial";
+            label1.Text = "Bienvenido:";
             label1.Click += label1_Click;
             // 
             // pblogo
@@ -91,40 +135,18 @@
             pblogo.BackgroundImageLayout = ImageLayout.Stretch;
             pblogo.Location = new Point(3, 3);
             pblogo.Name = "pblogo";
-            pblogo.Size = new Size(254, 84);
+            pblogo.Size = new Size(215, 84);
             pblogo.SizeMode = PictureBoxSizeMode.StretchImage;
             pblogo.TabIndex = 4;
             pblogo.TabStop = false;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.LightSteelBlue;
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(958, 16);
-            button1.Name = "button1";
-            button1.Size = new Size(105, 64);
-            button1.TabIndex = 3;
-            button1.Text = "Gestión de Ventas";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.WhiteSmoke;
-            pictureBox1.Location = new Point(-2, 90);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1190, 10);
-            pictureBox1.TabIndex = 6;
-            pictureBox1.TabStop = false;
             // 
             // UI
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(1184, 711);
+            ClientSize = new Size(1194, 711);
             Controls.Add(Contenedor);
-            Controls.Add(pictureBox1);
             Controls.Add(panel1);
             Name = "UI";
             StartPosition = FormStartPosition.CenterScreen;
@@ -133,19 +155,19 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pblogo).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel Contenedor;
-        private Button btnGestionCompras;
         private Panel panel1;
-        private Button button1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private PictureBox pblogo;
         private Label label1;
-        private PictureBox pictureBox1;
+        private Label lblRolUsuario;
+        private Label lblNombreUsuario;
+        private Label label2;
+        private Button btnLogout;
     }
 }

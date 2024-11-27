@@ -19,9 +19,10 @@ namespace Data
                 using (SqlConnection conn = new SqlConnection(DBConnection.GetDBAccess()))
                 {
                     conn.Open();
-                    string query = "SELECT IDROL, DESCRIPCION, FECHACREACION FROM ROL";
+                    string query = "SELECT IDROL, DESCRIPCION, FECHACREACION FROM ROL WHERE IDROL = @id";
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
+                        cmd.Parameters.AddWithValue("id",ID);
                         using (SqlDataReader reader = cmd.ExecuteReader())
                         {
                             while (reader.Read())

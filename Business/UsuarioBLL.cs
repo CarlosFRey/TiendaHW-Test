@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Data;
+using DTO;
 using Entidades;
 
 namespace Business
@@ -23,6 +24,7 @@ namespace Business
         {
             try
             {
+                password = Encriptar.GenerateSHA256(password);
                 return usuarioDAO.validarLogin(DNI, password);
             }
             catch (Exception ex) { throw; }

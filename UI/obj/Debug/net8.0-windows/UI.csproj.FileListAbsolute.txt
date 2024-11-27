@@ -78,3 +78,5 @@ E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\bin\Debug\
 E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\bin\Debug\net8.0-windows\DTO.pdb
 E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\bin\Debug\net8.0-windows\FontAwesome.Sharp.dll
 E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\obj\Debug\net8.0-windows\UI.Login.resources
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\obj\Debug\net8.0-windows\UI.UI_Administrador.resources
+E:\UAI\5to Cuatrimestre\LUG\Programas\TiendaHW-Test1\TiendaHW-Test\UI\obj\Debug\net8.0-windows\UI.UIxContable.resources

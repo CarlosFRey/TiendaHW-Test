@@ -45,10 +45,11 @@ namespace Data
                 using (SqlConnection conn = new SqlConnection(DBConnection.GetDBAccess()))
                 {
                     conn.Open();
-                    string query = "SELECT IDUSUARIO, DNI, NOMBRECOMPLETO, CLAVE, IDROL, ESTADO FROM USUARIO WHERE DNI = @dni";
+                    string query = "SELECT IDUSUARIO, DNI, NOMBRECOMPLETO, CLAVE, IDROL, ESTADO FROM USUARIO WHERE DNI = @dni AND CLAVE = @password";
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@dni", DNI);
+                        cmd.Parameters.AddWithValue("@password", password);
                         using (SqlDataReader reader = cmd.ExecuteReader())
                         {
                             while (reader.Read())

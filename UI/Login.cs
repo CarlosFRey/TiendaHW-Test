@@ -10,6 +10,9 @@ using System.Windows.Forms;
 using Business;
 using Data;
 using Entidades;
+using System.Security.Cryptography;
+using DTO;
+
 
 namespace UI
 {
@@ -42,12 +45,13 @@ namespace UI
                 //método linq
                 //usuario = new UsuarioBLL().getUsuarios().Where(u => u.DNI == Convert.ToInt32(txtUsuario.Text) && u.Clave == txtPassword.Text).FirstOrDefault(); 
                 //si fuera manual
+                //MessageBox.Show($"La clave ingresada es: {txtPassword.Text} \nLa clave encriptada es: {Encriptar.GenerateSHA256(txtPassword.Text)}");
                 usuario = usuarioBLL.validarLogin(Convert.ToInt32(txtUsuario.Text), txtPassword.Text);
             }
             
             if (usuario.Clave != null)
             {
-                UI formUI = new UI();
+                UI formUI = new UI(usuario);
                 formUI.Show();
                 this.Hide();
                 formUI.FormClosing += UI_closing;
